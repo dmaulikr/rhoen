@@ -5,9 +5,11 @@ CPPFLAGS = -Iinc -MMD -MP
 CFLAGS = -ansi -pedantic -Wall -Wextra
 LDFLAGS = -Llib -lUtil -lEngine -lGLEW -lGL
 TARGET = bin/rhoen
+TEST = bin/test
 SRCDIR = src
 OBJDIR = obj
 LIBDIR = lib
+TESTDIR = test
 UTILDIR = util
 ENGINEDIR = engine
 GAMEDIR = game
@@ -24,9 +26,10 @@ GAMEDIR = game
 _SRC_UTIL   = $(wildcard $(SRCDIR)/$(UTILDIR)/*.cpp $(SRCDIR)/$(UTILDIR)/**/*.cpp)
 _SRC_ENGINE = $(wildcard $(SRCDIR)/$(ENGINEDIR)/*.cpp $(SRCDIR)/$(ENGINEDIR)/**/*.cpp)
 _SRC_GAME   = $(wildcard $(SRCDIR)/$(GAMEDIR)/*.cpp $(SRCDIR)/$(GAMEDIR)/**/*.cpp)
-_OBJ_UTIL   = $(subst src/,obj/, $(subst .cpp,.o, $(_SRC_UTIL)))
-_OBJ_ENGINE = $(subst src/,obj/, $(subst .cpp,.o, $(_SRC_ENGINE)))
-_OBJ_GAME   = $(subst src/,obj/, $(subst .cpp,.o, $(_SRC_GAME)))
+_OBJ_UTIL   = $(subst $(SRCDIR)/,$(OBJDIR)/, $(subst .cpp,.o, $(_SRC_UTIL)))
+_OBJ_ENGINE = $(subst $(SRCDIR)/,$(OBJDIR)/, $(subst .cpp,.o, $(_SRC_ENGINE)))
+_OBJ_GAME   = $(subst $(SRCDIR)/,$(OBJDIR)/, $(subst .cpp,.o, $(_SRC_GAME)))
+_SRC_TEST   = $(wildcard $(TESTDIR)/*.cpp $(TESTDIR)/**/*.cpp)
 
 all: $(TARGET)
 allclean: all clean
@@ -52,19 +55,21 @@ $(LIBDIR)/libUtil.a: $(_OBJ_UTIL) | $(LIBDIR)
 $(LIBDIR)/libEngine.a: $(_OBJ_ENGINE) | $(LIBDIR)
 	$(AR) $(ARFLAGS) $@ $^
 
+# Compile test sources, it would be nice if this was handled by the
+# pattern rule for objects (which currently only looks inside SRCDIR)
+$(TEST): $(_SRC_TEST) $(_OBJ_UTIL) $(_OBJ_ENGINE) # FIXME: this sucks
+	$(CC) -o $@ -Iinc $(CFLAGS) $^
+
 $(LIBDIR):
 	@mkdir -p $@
 
-test: # TODO: Unit tests with CATCH
-	@echo No tests implemented yet.
-
-docs: # TODO: Auto-docs with Doxygen
-	@echo No docs implemented yet.
+test: $(TEST)
+	@$<
 
 clean:
 	rm -rf $(OBJDIR) $(LIBDIR)
 
-.PHONY: all run test docs clean allclean runclean
+.PHONY: all run test clean allclean runclean
 
 # Include dependency files
 -include $(_OBJ_UTIL:.o=.d)
