@@ -1,0 +1,20 @@
+language: cpp
+os: linux
+dist: trusty 
+sudo: false
+compiler: gcc
+addons:
+  apt:
+    packages:
+    - libglew-dev
+    - freeglut3-dev
+    - graphviz
+    - doxygen
+
+before_script:
+  - make clean
+
+script:
+  - make
+  - make test
+  - make docs
