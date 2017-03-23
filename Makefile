@@ -26,24 +26,27 @@ GAMEDIR = game
 _SRC_UTIL   = $(wildcard $(SRCDIR)/$(UTILDIR)/*.cpp $(SRCDIR)/$(UTILDIR)/**/*.cpp)
 _SRC_ENGINE = $(wildcard $(SRCDIR)/$(ENGINEDIR)/*.cpp $(SRCDIR)/$(ENGINEDIR)/**/*.cpp)
 _SRC_GAME   = $(wildcard $(SRCDIR)/$(GAMEDIR)/*.cpp $(SRCDIR)/$(GAMEDIR)/**/*.cpp)
-_OBJ_UTIL   = $(subst $(SRCDIR)/,$(OBJDIR)/, $(subst .cpp,.o, $(_SRC_UTIL)))
-_OBJ_ENGINE = $(subst $(SRCDIR)/,$(OBJDIR)/, $(subst .cpp,.o, $(_SRC_ENGINE)))
-_OBJ_GAME   = $(subst $(SRCDIR)/,$(OBJDIR)/, $(subst .cpp,.o, $(_SRC_GAME)))
 _SRC_TEST   = $(wildcard $(TESTDIR)/*.cpp $(TESTDIR)/**/*.cpp)
+_OBJ_UTIL   = $(subst $(SRCDIR)/,$(OBJDIR)/,$(subst .cpp,.o,$(_SRC_UTIL)))
+_OBJ_ENGINE = $(subst $(SRCDIR)/,$(OBJDIR)/,$(subst .cpp,.o,$(_SRC_ENGINE)))
+_OBJ_GAME   = $(subst $(SRCDIR)/,$(OBJDIR)/,$(subst .cpp,.o,$(_SRC_GAME)))
+_OBJ_TEST   = $(addprefix $(OBJDIR)/,$(subst .cpp,.o,$(_SRC_TEST)))
 
 all: $(TARGET)
 allclean: all clean
 runclean: run clean
 run: $(TARGET)
 	@$<
+test: $(TEST)
+	@$<
 
-# Pattern rule for all object files, creates new directories if necessary
+# Pattern rule for object files, creates new directories if necessary
 # Object directory will mirror the structure of the source directory
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
 	$(if $(wildcard $(@D)),, @mkdir -p $(@D))
 	$(CC) -c -o $@ $(CPPFLAGS) $(CFLAGS) $<
 
-# Link game objects with both static libraries and compile
+# Link game objects with both static libraries
 $(TARGET): $(_OBJ_GAME) $(LIBDIR)/libUtil.a $(LIBDIR)/libEngine.a
 	$(CC) -o $@ $(CPPFLAGS) $(CFLAGS) $(filter %.o, $^) $(LDFLAGS)
 
@@ -55,16 +58,19 @@ $(LIBDIR)/libUtil.a: $(_OBJ_UTIL) | $(LIBDIR)
 $(LIBDIR)/libEngine.a: $(_OBJ_ENGINE) | $(LIBDIR)
 	$(AR) $(ARFLAGS) $@ $^
 
-# Compile test sources, it would be nice if this was handled by the
-# pattern rule for objects (which currently only looks inside SRCDIR)
-$(TEST): $(_SRC_TEST) $(_OBJ_UTIL) $(_OBJ_ENGINE) # FIXME: this sucks
-	$(CC) -o $@ -Iinc $(CFLAGS) $^
+# Pattern rule for test object files, it would be nice if this
+# rule could be combined with the generic object rule above
+$(_OBJ_TEST): $(OBJDIR)/$(TESTDIR)/%.o: $(TESTDIR)/%.cpp
+	$(if $(wildcard $(@D)),, @mkdir -p $(@D))
+	$(CC) -c -o $@ $(CPPFLAGS) $(CFLAGS) $<
 
+# Link all objects required for running tests
+$(TEST): $(_OBJ_TEST) $(_OBJ_UTIL) $(_OBJ_ENGINE)
+	$(CC) -o $@ $(CPPFLAGS) $(CFLAGS) $^
+
+# Make lib directory
 $(LIBDIR):
 	@mkdir -p $@
-
-test: $(TEST)
-	@$<
 
 clean:
 	rm -rf $(OBJDIR) $(LIBDIR)
@@ -75,3 +81,4 @@ clean:
 -include $(_OBJ_UTIL:.o=.d)
 -include $(_OBJ_ENGINE:.o=.d)
 -include $(_OBJ_GAME:.o=.d)
+-include $(_OBJ_TEST:.o=.d)
