@@ -85,11 +85,11 @@ docs: $(DOCDIR)/Doxyfile.out
 	doxygen $<; rm -f $<
 
 # Publish docs
-publish: docs
+publish:
 	$(DOCDIR)/publish.sh
 
 clean:
-	rm -rf $(OBJDIR) $(LIBDIR)
+	rm -rf $(OBJDIR) $(LIBDIR) $(DOCDIR)/html
 
 .PHONY: all run test docs publish clean allclean runclean
 
