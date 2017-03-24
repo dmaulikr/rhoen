@@ -9,6 +9,7 @@ TEST = bin/test
 SRCDIR = src
 OBJDIR = obj
 LIBDIR = lib
+DOCDIR = doc
 TESTDIR = test
 UTILDIR = util
 ENGINEDIR = engine
@@ -58,8 +59,8 @@ $(LIBDIR)/libUtil.a: $(_OBJ_UTIL) | $(LIBDIR)
 $(LIBDIR)/libEngine.a: $(_OBJ_ENGINE) | $(LIBDIR)
 	$(AR) $(ARFLAGS) $@ $^
 
-# Pattern rule for test object files, it would be nice if this
-# rule could be combined with the generic object rule above
+# Static pattern rule for test object files, it would be nice if this
+# rule could be combined with the generic rule above
 $(_OBJ_TEST): $(OBJDIR)/$(TESTDIR)/%.o: $(TESTDIR)/%.cpp
 	$(if $(wildcard $(@D)),, @mkdir -p $(@D))
 	$(CC) -c -o $@ $(CPPFLAGS) $(CFLAGS) $<
@@ -72,10 +73,22 @@ $(TEST): $(_OBJ_TEST) $(_OBJ_UTIL) $(_OBJ_ENGINE)
 $(LIBDIR):
 	@mkdir -p $@
 
+# Generate Doxyfile from Makefile settings
+$(DOCDIR)/Doxyfile.out: $(DOCDIR)/Doxyfile.in
+	@cat $< > $@
+	@echo OUTPUT_DIRECTORY = $(DOCDIR) >> $@
+	@echo INPUT = $(SRCDIR)/$(UTILDIR)     \
+	              $(SRCDIR)/$(ENGINEDIR)   \
+	              $(SRCDIR)/$(GAMEDIR) >> $@
+
+# Generate documentation
+docs: $(DOCDIR)/Doxyfile.out
+	doxygen $<; rm -f $<
+
 clean:
 	rm -rf $(OBJDIR) $(LIBDIR)
 
-.PHONY: all run test clean allclean runclean
+.PHONY: all run test docs clean allclean runclean
 
 # Include dependency files
 -include $(_OBJ_UTIL:.o=.d)
