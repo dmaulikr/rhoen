@@ -23,19 +23,7 @@
  */
 
 /**
- * @namespace util
+ * @namespace ul
  * @ingroup util
- * Utility Library
- */
-
-/**
- * @namespace engine
- * @ingroup engine
- * Core Framework
- */
-
-/**
- * @namespace game
- * @ingroup engine
- * Game Logic
+ * Namespace for most utility library classes and functions.
  */
