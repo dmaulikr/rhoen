@@ -19,6 +19,7 @@ before_script:
 script:
   - make
   - make test
+  - make docs
 
 after_success:
   - make publish
