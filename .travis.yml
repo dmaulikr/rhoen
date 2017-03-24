@@ -3,6 +3,9 @@ os: linux
 dist: trusty 
 sudo: false
 compiler: gcc
+branches:
+  only:
+    - master
 addons:
   apt:
     packages:
@@ -16,4 +19,6 @@ before_script:
 script:
   - make
   - make test
+
+after_success:
   - make publish
