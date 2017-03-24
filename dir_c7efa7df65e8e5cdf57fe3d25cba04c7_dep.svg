@@ -12,7 +12,7 @@
 <g id="clust1" class="cluster"><title>clusterdir_b7878ad5ecbf2506f4125b9d34c97e45</title>
 <g id="a_clust1"><a xlink:href="dir_b7878ad5ecbf2506f4125b9d34c97e45.html" target="_top" xlink:title="util">
 <polygon fill="#ddddee" stroke="black" points="8,-8 8,-79 78,-79 78,-8 8,-8"/>
-<text text-anchor="middle" x="43" y="-67" font-family="FreeSans" font-size="10.00">util</text>
+<text text-anchor="middle" x="43" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">util</text>
 </a>
 </g>
 </g>
@@ -20,7 +20,7 @@
 <g id="node1" class="node"><title>dir_c7efa7df65e8e5cdf57fe3d25cba04c7</title>
 <g id="a_node1"><a xlink:href="dir_c7efa7df65e8e5cdf57fe3d25cba04c7.html" target="_top" xlink:title="math">
 <polygon fill="#eeeeff" stroke="black" points="70,-52 16,-52 16,-16 70,-16 70,-52"/>
-<text text-anchor="middle" x="43" y="-31.5" font-family="FreeSans" font-size="10.00">math</text>
+<text text-anchor="middle" x="43" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">math</text>
 </a>
 </g>
 </g>
