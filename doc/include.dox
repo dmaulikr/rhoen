@@ -25,17 +25,17 @@
 /**
  * @namespace util
  * @ingroup util
- * Utility library related classes and functions.
+ * Utility library
  */
 
 /**
  * @namespace core
  * @ingroup engine
- * Engine related classes and functions.
+ * Core framework
  */
 
 /**
  * @namespace game
  * @ingroup game
- * Game related classes and functions.
+ * Game logic
  */
