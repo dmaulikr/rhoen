@@ -1,4 +1,5 @@
 #include <util.h>
+using namespace ul;
 
 String::String()
 {

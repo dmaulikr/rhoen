@@ -1,3 +1,7 @@
+namespace ul {
+	class String;
+}
+
 /**
  * Container class for managing characters sequences.
  * Keeps an internal buffer to store any sequence of characters. Will also
@@ -5,7 +9,7 @@
  * implementation should be pretty standard for a C++ string. New features
  * will be added when they are needed by other parts of the project.
  */
-class String
+class ul::String
 {
 public:
 	String();
