@@ -1,6 +1,6 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
-#include "../src/engine/Engine.h"
+#include "../src/core/Engine.h"
 
 #endif /* ENGINE_H */

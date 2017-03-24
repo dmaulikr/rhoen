@@ -8,28 +8,26 @@
  */
 
 /**
- * @defgroup util Utility
+ * @defgroup util
  * Library for containers, algorithms and other necessities.
  */
 
 /**
- * @defgroup engine Engine
- * Core framework which consists of multiple subsystems.
+ * @defgroup core
+ * The main engine which consists of multiple subsystems.
  */
 
 /**
- * @defgroup game Game
- * Game specific logic, powered by the core framework.
+ * @defgroup game
+ * Game specific logic powered by the core framework.
  */
 
 /**
  * @namespace util
  * @ingroup util
- * Utility library
  */
 
 /**
  * @namespace core
- * @ingroup engine
- * Core framework
+ * @ingroup core
  */

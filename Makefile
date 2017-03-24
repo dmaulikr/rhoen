@@ -12,7 +12,7 @@ LIBDIR = lib
 DOCDIR = doc
 TESTDIR = test
 UTILDIR = util
-ENGINEDIR = engine
+ENGINEDIR = core
 GAMEDIR = game
 
 # Building from source requires GNU Make and gcc v3.0 or higher
