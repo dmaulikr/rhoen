@@ -14,8 +14,8 @@ cd `dirname $0`
 if [ -z ${GH_REPO_NAME} ] || [ -z ${GH_REPO_REF} ] || [ -z ${GH_REPO_TOKEN} ] ||
    [ -z ${TRAVIS_BUILD_NUMBER} ] || [ -z ${TRAVIS_COMMIT} ]; then
 	echo "" >&2
-	echo "Error: Missing required environment variables, aborting..."
-	echo "Error: This script should only be invoked by the CI Server"
+	echo "Error: Missing required environment variables, aborting..." >&2
+	echo "Error: This script should only be invoked by the CI Server" >&2
 	exit 1
 fi
 
