@@ -81,14 +81,18 @@ $(DOCDIR)/Doxyfile.out: $(DOCDIR)/Doxyfile.in
 	              $(SRCDIR)/$(ENGINEDIR)   \
 	              $(SRCDIR)/$(GAMEDIR) >> $@
 
-# Generate documentation
+# Generate docs from Doxyfile
 docs: $(DOCDIR)/Doxyfile.out
 	doxygen $<; rm -f $<
+
+# Publish docs
+publish: docs
+	$(DOCDIR)/publish.sh
 
 clean:
 	rm -rf $(OBJDIR) $(LIBDIR)
 
-.PHONY: all run test docs clean allclean runclean
+.PHONY: all run test docs publish clean allclean runclean
 
 # Include dependency files
 -include $(_OBJ_UTIL:.o=.d)
