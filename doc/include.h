@@ -9,18 +9,33 @@
 
 /**
  * @defgroup util Utility
- *
  * Library for containers, algorithms and other necessities.
  */
 
 /**
  * @defgroup engine Engine
- *
  * Core framework upon which the game is built. 
  */
 
 /**
  * @defgroup game Game
- *
  * Game module which contains all the game-specific logic.
+ */
+
+/**
+ * @namespace util
+ * @ingroup util
+ * Utility Library
+ */
+
+/**
+ * @namespace engine
+ * @ingroup engine
+ * Core Framework
+ */
+
+/**
+ * @namespace game
+ * @ingroup engine
+ * Game Logic
  */
