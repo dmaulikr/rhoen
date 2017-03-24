@@ -7,18 +7,20 @@
 
 var indexSectionsWithContent =
 {
-  0: "celmsv~",
+  0: "ceilmsuv~",
   1: "esv",
-  2: "emsv",
-  3: "celmsv~"
+  2: "u",
+  3: "eimsv",
+  4: "celmsv~"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "files",
-  3: "functions"
+  2: "namespaces",
+  3: "files",
+  4: "functions"
 };
 
 function convertToId(search)
