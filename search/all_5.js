@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['string',['String',['../classString.html',1,'String'],['../classString.html#a8a7ef356e05eb9b1ea1ab518baee3095',1,'String::String()']]],
-  ['string_2ecpp',['String.cpp',['../String_8cpp.html',1,'']]],
-  ['string_2eh',['String.h',['../String_8h.html',1,'']]]
+  ['main',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]]
 ];
