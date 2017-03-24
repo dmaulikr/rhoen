@@ -28,7 +28,7 @@ if [ ! -d "html" ] || [ ! -f "html/index.html" ]; then
 fi
 
 # Clone current docs branch
-git clone -b docs https://git@${GH_REPO_REF}
+git clone -b gh-pages https://git@${GH_REPO_REF}
 cd ${GH_REPO_NAME}
 
 # Configure git using fake credentials
