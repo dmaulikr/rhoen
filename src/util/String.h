@@ -1,4 +1,4 @@
-namespace ul {
+namespace util {
 	class String;
 }
 
@@ -9,7 +9,7 @@ namespace ul {
  * implementation should be pretty standard for a C++ string. New features
  * will be added when they are needed by other parts of the project.
  */
-class ul::String
+class util::String
 {
 public:
 	String();

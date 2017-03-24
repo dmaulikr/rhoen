@@ -1,4 +1,4 @@
-namespace ul {
+namespace util {
 	class Vector;
 }
 
@@ -9,7 +9,7 @@ namespace ul {
  * with vectors and matrices, which makes it possible to rotate
  * transform or translate the defined points in 3D perspective.
  */
-class ul::Vector
+class util::Vector
 {
 public:
 	Vector();

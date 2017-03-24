@@ -23,7 +23,7 @@
  */
 
 /**
- * @namespace ul
+ * @namespace util
  * @ingroup util
  * Namespace for most utility library classes and functions.
  */
