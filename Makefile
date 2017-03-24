@@ -78,7 +78,8 @@ $(DOCDIR)/Doxyfile.out: $(DOCDIR)/Doxyfile.in
 	@echo OUTPUT_DIRECTORY = $(DOCDIR) >> $@
 	@echo INPUT = $(SRCDIR)/$(UTILDIR)     \
 	              $(SRCDIR)/$(ENGINEDIR)   \
-	              $(SRCDIR)/$(GAMEDIR) >> $@
+	              $(SRCDIR)/$(GAMEDIR)     \
+	              $(DOCDIR)/ >> $@
 
 # Generate docs from Doxyfile
 docs: $(DOCDIR)/Doxyfile.out
