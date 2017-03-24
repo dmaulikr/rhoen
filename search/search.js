@@ -9,7 +9,7 @@ var indexSectionsWithContent =
 {
   0: "cegilmrsuv~",
   1: "esv",
-  2: "cgu",
+  2: "cu",
   3: "eimsv",
   4: "celmsv~",
   5: "egu",
