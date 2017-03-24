@@ -18,7 +18,7 @@ GAMEDIR = game
 # Building from source requires GNU Make and gcc v3.0 or higher
 # TODO: POSIX compatibility and precompiled headers? (Might get messy...)
 # TODO: Pass flags via ./configure script (not using GNU Autoconfig, ugh)
-# TODO: Generate automatic documentation for both libraries using Doxygen
+# TODO: Deploy Doxygen documentation from CI server to Github pages
 
 # ====================================================================================
 
