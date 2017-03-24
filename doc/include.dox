@@ -14,12 +14,12 @@
 
 /**
  * @defgroup engine Engine
- * Core framework which is used to create the game. 
+ * Core framework which consists of multiple subsystems.
  */
 
 /**
  * @defgroup game Game
- * Game module which contains all the game-specific logic.
+ * Game specific logic, powered by the core framework.
  */
 
 /**
@@ -32,10 +32,4 @@
  * @namespace core
  * @ingroup engine
  * Core framework
- */
-
-/**
- * @namespace game
- * @ingroup game
- * Game logic
  */
