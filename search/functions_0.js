@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cmp',['Cmp',['../classul_1_1String.html#ac4059947afb2be13085b9b91277e933d',1,'ul::String']]]
+  ['cmp',['Cmp',['../classutil_1_1String.html#a486c19d00f7285924794440419d90612',1,'util::String']]]
 ];
