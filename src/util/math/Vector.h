@@ -9,6 +9,7 @@ namespace util {
  * with vectors and matrices, which makes it possible to rotate
  * transform or translate the defined points in 3D perspective.
  */
+/// @ingroup util
 class util::Vector
 {
 public:

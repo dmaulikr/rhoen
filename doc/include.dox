@@ -8,17 +8,17 @@
  */
 
 /**
- * @defgroup util
+ * @defgroup util Utility
  * Library for containers, algorithms and other necessities.
  */
 
 /**
- * @defgroup core
- * The main engine which consists of multiple subsystems.
+ * @defgroup core Core
+ * The core engine which consists of multiple subsystems.
  */
 
 /**
- * @defgroup game
+ * @defgroup game Game
  * Game specific logic powered by the core framework.
  */
 

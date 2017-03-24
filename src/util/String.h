@@ -9,6 +9,7 @@ namespace util {
  * implementation should be pretty standard for a C++ string. New features
  * will be added when they are needed by other parts of the project.
  */
+/// @ingroup util
 class util::String
 {
 public:

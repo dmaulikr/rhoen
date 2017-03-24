@@ -5,6 +5,7 @@ namespace core {
 /**
  *  Handles management of all core subsystems.
  */
+/// @ingroup core
 class core::Engine
 {
 public:
