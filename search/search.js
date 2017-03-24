@@ -7,10 +7,10 @@
 
 var indexSectionsWithContent =
 {
-  0: "emsv~",
+  0: "celmsv~",
   1: "esv",
   2: "emsv",
-  3: "emsv~"
+  3: "celmsv~"
 };
 
 var indexSectionNames =
