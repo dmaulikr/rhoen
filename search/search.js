@@ -12,7 +12,7 @@ var indexSectionsWithContent =
   2: "cu",
   3: "eimsv",
   4: "celmsv~",
-  5: "egu",
+  5: "cgu",
   6: "r"
 };
 
