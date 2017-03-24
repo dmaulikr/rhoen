@@ -9,20 +9,22 @@ var indexSectionsWithContent =
 {
   0: "cegilmrsuv~",
   1: "esv",
-  2: "eimsv",
-  3: "celmsv~",
-  4: "egu",
-  5: "r"
+  2: "egu",
+  3: "eimsv",
+  4: "celmsv~",
+  5: "egu",
+  6: "r"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "files",
-  3: "functions",
-  4: "groups",
-  5: "pages"
+  2: "namespaces",
+  3: "files",
+  4: "functions",
+  5: "groups",
+  6: "pages"
 };
 
 function convertToId(search)
