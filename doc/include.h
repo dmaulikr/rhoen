@@ -1,12 +1,26 @@
 /**
- * @defgroup util Utility Library
- * @defgroup engine Engine Framework
- * @defgroup game Game
+ * @mainpage Rhoen Documentation
+ * @section intro Introduction
+ *
+ * On this website you find all code documentation for Rhoen, which
+ * is a first person 3D RPG engine written in a small subset of C++.
+ * Please select any category from the menu above to see more.
  */
 
 /**
- * @namespace util
- * @ingroup util
- * @brief Library for containers, algorithms and all other low-level
- *        functionality that is needed by the engine.
+ * @defgroup util Utility
+ *
+ * Library for containers, algorithms and other necessities.
+ */
+
+/**
+ * @defgroup engine Engine
+ *
+ * Core framework upon which the game is built. 
+ */
+
+/**
+ * @defgroup game Game
+ *
+ * Game module which contains all the game-specific logic.
  */
