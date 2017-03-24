@@ -14,7 +14,7 @@
 
 /**
  * @defgroup engine Engine
- * Core framework upon which the game is built. 
+ * Core framework which is used to create the game. 
  */
 
 /**
