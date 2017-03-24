@@ -2,9 +2,9 @@
  * @mainpage Rhoen Documentation
  * @section intro Introduction
  *
- * On this website you find all code documentation for Rhoen, which
- * is a first person 3D RPG engine written in a small subset of C++.
- * Please select any category from the menu above to see more.
+ * On this page you find all code documentation for Rhoen, which is a
+ * first person 3D RPG engine written in a small subset of C++. Please
+ * select any category from the menu above to see more.
  */
 
 /**
@@ -25,5 +25,17 @@
 /**
  * @namespace util
  * @ingroup util
- * Namespace for most utility library classes and functions.
+ * Utility library related classes and functions.
+ */
+
+/**
+ * @namespace core
+ * @ingroup engine
+ * Engine related classes and functions.
+ */
+
+/**
+ * @namespace game
+ * @ingroup game
+ * Game related classes and functions.
  */

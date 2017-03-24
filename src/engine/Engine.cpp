@@ -1,5 +1,5 @@
-#include <util.h>
 #include <engine.h>
+using namespace core;
 
 Engine::Engine()
 {
