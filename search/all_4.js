@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['length',['Length',['../classString.html#add6e410c0a63a07037fda94014b99cad',1,'String']]]
+  ['length',['Length',['../classul_1_1String.html#adaed825ac2d053427029b6b61cb7f18b',1,'ul::String']]]
 ];
