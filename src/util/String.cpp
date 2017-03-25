@@ -13,7 +13,9 @@ int util::strcmp(const char *a, const char *b)
 // Replaces strlen from standard library
 int util::strlen(const char *str)
 {
-	int len = 0;
+	int len;
+
+	len = 0;
 	while (*str++) {
 		len++;
 	}
@@ -23,17 +25,22 @@ int util::strlen(const char *str)
 // Replaces strcpy from standard library
 char *util::strcpy(char *dst, const char *src)
 {
-    char *ret = dst;
-    while ((*dst++ = *src++));
-    return ret;
+	char *ret;
+
+	ret = dst;
+	while ((*dst++ = *src++));
+	return ret;
 }
 
 // Replaces memcpy from standard library
-void *util::memcpy(void* dst, const void* src, int size) {
-	char* dstbyte = (char*) dst;
-	char* srcbyte = (char*) src;
+void *util::memcpy(void* dst, const void* src, int size)
+{
+	char *dst_b, *src_b;
+
+	dst_b = (char*) dst;
+	src_b = (char*) src;
 	while (size--) {
-		*dstbyte++ = *srcbyte++;
+		*dst_b++ = *src_b++;
 	}
 	return dst;
 }
@@ -81,6 +88,8 @@ void String::operator=(const String &str)
 
 void String::operator=(const char *str)
 {
+	int len, diff, i;
+
 	if (!str) {
 		Enalloc(1, false);
 		data[0] = '\0';
@@ -92,7 +101,7 @@ void String::operator=(const char *str)
 	}
 	// Check for aliasing
 	if (str >= data && str <= data + length) {
-		int i,  diff = str - data;
+		diff = str - data;
 		for (i = 0;  str[i]; i++) {
 			data[i] = str[i];
 		}
@@ -100,7 +109,7 @@ void String::operator=(const char *str)
 		length -= diff;
 		return;
 	}
-	int len = strlen(str);
+	len = strlen(str);
 	Enalloc(len+1, false);
 	strcpy(data, str);
 	length = len;
@@ -123,8 +132,7 @@ void String::Enalloc(int size, bool copy)
 
 void String::Realloc(int size, bool copy)
 {
-	int mod;
-	int newsize;
+	int mod, newsize;
 	char *newbuffer;
 
 	if (size <= 0) {
