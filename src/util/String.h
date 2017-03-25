@@ -4,6 +4,7 @@ namespace util
 	const int STR_BUF_BASE = 16; ///< String buffer base size
 	const int STR_BUF_GRAN = 32; ///< String allocation granularity
 	char *strcpy(char *dst, const char *src); ///< Replacement for strcpy
+	void *memcpy(void* dst, const void* src, int size); ///< Replacement for memcpy
 	int strcmp(const char *a, const char *b); ///< Replacement for strcmp
 	int strlen(const char *str); ///< Replacement for strlen
 }
@@ -25,6 +26,8 @@ public:
 	~String(); ///< Destructor
 
 	int Length() const; ///< Returns length of String
+	void operator=(const String &str); ///< Assigns value from String
+	void operator=(const char *str); ///< Assigns value from char array
 
 private:
 	char buffer[STR_BUF_BASE]; ///< Dynamically managed base buffer

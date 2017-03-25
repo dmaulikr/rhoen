@@ -1,14 +1,6 @@
 #include <util.h>
 using namespace util;
 
-// Replaces strcpy from standard library
-char *util::strcpy(char *dst, const char *src)
-{
-    char *ret = dst;
-    while ((*dst++ = *src++));
-    return ret;
-}
-
 // Replaces strcmp from standard library
 int util::strcmp(const char *a, const char *b)
 {
@@ -26,6 +18,24 @@ int util::strlen(const char *str)
 		len++;
 	}
 	return len;
+}
+
+// Replaces strcpy from standard library
+char *util::strcpy(char *dst, const char *src)
+{
+    char *ret = dst;
+    while ((*dst++ = *src++));
+    return ret;
+}
+
+// Replaces memcpy from standard library
+void *util::memcpy(void* dst, const void* src, int size) {
+	char* dstbyte = (char*) dst;
+	char* srcbyte = (char*) src;
+	while (size--) {
+		*dstbyte++ = *srcbyte++;
+	}
+	return dst;
 }
 
 String::String()
@@ -59,6 +69,41 @@ String::~String()
 int String::Length() const
 {
 	return length;
+}
+
+void String::operator=(const String &str)
+{
+	length = str.Length();
+	Enalloc(length+1, false);
+	memcpy(data, str.data, length);
+	data[length] = '\0';
+}
+
+void String::operator=(const char *str)
+{
+	if (!str) {
+		Enalloc(1, false);
+		data[0] = '\0';
+		length = 0;
+		return;
+	}
+	if (str == data) {
+		return;
+	}
+	// Check for aliasing
+	if (str >= data && str <= data + length) {
+		int i,  diff = str - data;
+		for (i = 0;  str[i]; i++) {
+			data[i] = str[i];
+		}
+		data[i] = '\0';
+		length -= diff;
+		return;
+	}
+	int len = strlen(str);
+	Enalloc(len+1, false);
+	strcpy(data, str);
+	length = len;
 }
 
 void String::Init()
