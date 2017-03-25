@@ -4,7 +4,7 @@
  *
  * On this page you find all code documentation for Rhoen, which is a
  * first person 3D RPG engine written in a small subset of C++. Please
- * select any category from the menu above to see more.
+ * select any category from the menu above to find out more.
  */
 
 /**
@@ -14,12 +14,12 @@
 
 /**
  * @defgroup core Core
- * The core engine which consists of multiple subsystems.
+ * Core engine framework consisting of multiple subsystems.
  */
 
 /**
  * @defgroup game Game
- * Game specific logic powered by the core framework.
+ * Game specific logic powered by the core engine.
  */
 
 /**
