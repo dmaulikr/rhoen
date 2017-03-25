@@ -1,5 +1,7 @@
 <map id="util::String::String" name="util::String::String">
 <area shape="rect" id="node2" href="$classutil_1_1String.html#a7c7fc66225ecb5baf5960eecfbe6d168" title="Initializes private member variables. " alt="" coords="189,5,296,32"/>
-<area shape="rect" id="node3" href="$classutil_1_1String.html#a41dbcd32aba6022654420f1ca8634e52" title="Ensures there is enough memory. " alt="" coords="177,56,309,83"/>
-<area shape="rect" id="node4" href="$classutil_1_1String.html#ae1530f1c2413c3fca5a293d7d739d27e" title="Reallocates buffer memory. " alt="" coords="357,56,491,83"/>
+<area shape="rect" id="node3" href="$namespaceutil.html#ac9119bdb7fd3110bd304d77460a86ed0" title="Replacement for strlen. " alt="" coords="203,56,282,83"/>
+<area shape="rect" id="node4" href="$classutil_1_1String.html#a41dbcd32aba6022654420f1ca8634e52" title="Ensures there is enough memory. " alt="" coords="177,107,309,133"/>
+<area shape="rect" id="node6" href="$namespaceutil.html#ab5b1c6f07bee20ecae968d0523857c0a" title="Replacement for strcpy. " alt="" coords="539,132,621,159"/>
+<area shape="rect" id="node5" href="$classutil_1_1String.html#ae1530f1c2413c3fca5a293d7d739d27e" title="Reallocates buffer memory. " alt="" coords="357,107,491,133"/>
 </map>
