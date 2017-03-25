@@ -1,6 +1,32 @@
-#include <string.h> // strcpy, strlen
 #include <util.h>
 using namespace util;
+
+// Replaces strcpy from standard library
+char *util::strcpy(char *dst, const char *src)
+{
+    char *ret = dst;
+    while ((*dst++ = *src++));
+    return ret;
+}
+
+// Replaces strcmp from standard library
+bool util::strcmp(const char *a, const char *b)
+{
+	while((*a && *b) && (*a == *b)) {
+		a++; b++;
+	}
+	return *a - *b;
+}
+
+// Replaces strlen from standard library
+int util::strlen(const char *str)
+{
+	int len = 0;
+	while (*str++) {
+		len++;
+	}
+	return len;
+}
 
 String::String()
 {
@@ -12,7 +38,7 @@ String::String(String &str)
 	Init();
 	length = str.Length();
 	Enalloc(length+1);
-	strcpy(str.data, data);
+	util::strcpy(str.data, data);
 }
 
 String::String(const char *str)
@@ -23,7 +49,7 @@ String::String(const char *str)
 	}
 	length = strlen(str);
 	Enalloc(length+1);
-	strcpy(data, str);
+	util::strcpy(data, str);
 }
 
 String::~String()
@@ -59,7 +85,6 @@ void String::Realloc(int size, bool copy)
 	if (size <= 0) {
 		return;
 	}
-
 	mod = size % STR_BUF_GRAN;
 	if (!mod) {
 		newsize = size;
@@ -70,7 +95,7 @@ void String::Realloc(int size, bool copy)
 	newbuffer = new char[allocated];
 	if (data) {
 		if (copy) {
-			strcpy(newbuffer, data);
+			util::strcpy(newbuffer, data);
 		}
 		if (data != buffer) {
 			delete[] data;
