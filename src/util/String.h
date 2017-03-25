@@ -7,22 +7,29 @@ namespace util {
 /**
  * Container for storing characters sequences.
  * Keeps an internal buffer to hold any sequence of characters. Will reallocate
- * more memory if the data length exceeds its buffer size, keeping the memory
- * size a multiple of STR_BUF_GRAN. This should be a pretty basic implementation
- * of a C++ string. New features will be added as needed by other submodules.
+ * more memory if the data length exceeds its buffer size, while keeping memory
+ * size a multiple of STR_BUF_GRAN. This is a pretty basic implementation of a
+ * C++ string. New features will be added as required by other submodules.
  */
 /// @ingroup util
 class util::String
 {
 public:
-	String();
-	String(String &str);
-	String(char *str);
-	~String();
+	String(); ///< Default constructor
+	String(String &str); ///< Copy constructor
+	String(const char *str); ///< Copy constructor
+	~String(); ///< Destructor
+
+	int Length() const; ///< Returns length of String
 
 private:
-	char buffer[STR_BUF_BASE]; ///< Base buffer which can grow if necessary.
-	int allocated; ///< Number of bytes currently allocated for buffer.
-	char *head; ///< Pointer to first character in the buffer.
-	int length; ///< Number of characters that are stored.
+	char buffer[STR_BUF_BASE]; ///< Dynamically managed base buffer
+	int allocated; ///< Number of bytes currently allocated for buffer
+	char *data; ///< Pointer to first character in buffer
+	int length; ///< Number of characters in buffer
+
+	void Init(); ///< Initializes private member variables
+	void Enalloc(int size, bool copy = true); ///< Ensures there is enough memory
+	void Realloc(int size, bool copy = true); ///< Reallocates buffer memory
 };
+
