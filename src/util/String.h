@@ -1,10 +1,8 @@
 namespace util
 {
 	class String;
-
 	const int STR_BUF_BASE = 16; ///< String buffer base size
 	const int STR_BUF_GRAN = 32; ///< String allocation granularity
-
 	char *strcpy(char *dst, const char *src); ///< Replacement for strcpy
 	int strcmp(const char *a, const char *b); ///< Replacement for strcmp
 	int strlen(const char *str); ///< Replacement for strlen
