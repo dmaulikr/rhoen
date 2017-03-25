@@ -25,3 +25,19 @@ TEST_CASE("Strings can be initialized", "[util::String]")
 	util::String str_c(str_b);
 	REQUIRE(str_c.Length() == 10);
 }
+
+TEST_CASE("Strings can be assigned", "[util::String]")
+{
+	util::String str_a;
+	util::String str_b;
+
+	str_a = "Foo";
+	str_b = "Foobar";
+
+	util::String str_c = str_a;
+	REQUIRE(str_c.Length() == 3);
+
+	util::String str_d = str_b;
+	REQUIRE(str_d.Length() == 6);
+}
+
