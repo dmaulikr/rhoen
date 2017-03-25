@@ -2,7 +2,19 @@
 #include <util.h>
 #include <catch.h>
 
-TEST_CASE("Strings can be initialized", "[String]")
+TEST_CASE("Char arrays can be compared", "[util::strcmp]")
+{
+	int val_a = util::strcmp("string", "string");
+	REQUIRE(val_a == 0);
+
+	int val_c = util::strcmp("abcdef", "ABCDEF");
+	REQUIRE(val_c > 0);
+
+	int val_d = util::strcmp("ABCDEF", "abcdef");
+	REQUIRE(val_d < 0);
+}
+
+TEST_CASE("Strings can be initialized", "[util::String]")
 {
 	util::String str_a;
 	REQUIRE(str_a.Length() == 0);
