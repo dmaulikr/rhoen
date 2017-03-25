@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['head',['head',['../classutil_1_1String.html#afa4bdb326b1b0a9eaa0c030ea391599f',1,'util::String']]]
+  ['data',['data',['../classutil_1_1String.html#a2ea3bdd09ef160d31f4c99b128fefe89',1,'util::String']]]
 ];
