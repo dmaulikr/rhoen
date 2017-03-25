@@ -38,7 +38,7 @@ String::String(String &str)
 	Init();
 	length = str.Length();
 	Enalloc(length+1);
-	util::strcpy(str.data, data);
+	strcpy(str.data, data);
 }
 
 String::String(const char *str)
@@ -49,7 +49,7 @@ String::String(const char *str)
 	}
 	length = strlen(str);
 	Enalloc(length+1);
-	util::strcpy(data, str);
+	strcpy(data, str);
 }
 
 String::~String()
@@ -95,7 +95,7 @@ void String::Realloc(int size, bool copy)
 	newbuffer = new char[allocated];
 	if (data) {
 		if (copy) {
-			util::strcpy(newbuffer, data);
+			strcpy(newbuffer, data);
 		}
 		if (data != buffer) {
 			delete[] data;
