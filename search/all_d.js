@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['_7eengine',['~Engine',['../classcore_1_1Engine.html#a8ef7030a089ecb30bbfcb9e43094717a',1,'core::Engine']]],
-  ['_7estring',['~String',['../classutil_1_1String.html#ac40b2a3fb58c2d8556f5e6ff73510036',1,'util::String']]],
-  ['_7evector',['~Vector',['../classutil_1_1Vector.html#a2eb3c49587a4f12cade7895ccb73f6a0',1,'util::Vector']]]
+  ['vector',['Vector',['../classutil_1_1Vector.html',1,'util']]],
+  ['vector',['Vector',['../classutil_1_1Vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5',1,'util::Vector']]],
+  ['vector_2ecpp',['Vector.cpp',['../Vector_8cpp.html',1,'']]],
+  ['vector_2eh',['Vector.h',['../Vector_8h.html',1,'']]]
 ];
