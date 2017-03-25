@@ -7,13 +7,14 @@
 
 var indexSectionsWithContent =
 {
-  0: "cegilmrsuv~",
+  0: "abceghilmrsuv~",
   1: "esv",
   2: "cu",
   3: "eimsv",
-  4: "celmsv~",
-  5: "cgu",
-  6: "r"
+  4: "emsv~",
+  5: "abhls",
+  6: "cgu",
+  7: "r"
 };
 
 var indexSectionNames =
@@ -23,8 +24,9 @@ var indexSectionNames =
   2: "namespaces",
   3: "files",
   4: "functions",
-  5: "groups",
-  6: "pages"
+  5: "variables",
+  6: "groups",
+  7: "pages"
 };
 
 function convertToId(search)

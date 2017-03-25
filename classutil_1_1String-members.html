@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,14 +97,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classutil_1_1String.html">util::String</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classutil_1_1String.html#a486c19d00f7285924794440419d90612">Cmp</a>(const char *str) const </td><td class="entry"><a class="el" href="classutil_1_1String.html">util::String</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classutil_1_1String.html#a84b25efb436ed6c47331530db7a68dad">Length</a>() const </td><td class="entry"><a class="el" href="classutil_1_1String.html">util::String</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutil_1_1String.html#a10faec1cc97d8f5f411dc3ad992af611">allocated</a></td><td class="entry"><a class="el" href="classutil_1_1String.html">util::String</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classutil_1_1String.html#a6f7181dc0222b13adaaa2ad02d31b7ad">buffer</a></td><td class="entry"><a class="el" href="classutil_1_1String.html">util::String</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutil_1_1String.html#afa4bdb326b1b0a9eaa0c030ea391599f">head</a></td><td class="entry"><a class="el" href="classutil_1_1String.html">util::String</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classutil_1_1String.html#ac1b6cbbd3cac24557b15a054693e286c">length</a></td><td class="entry"><a class="el" href="classutil_1_1String.html">util::String</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classutil_1_1String.html#a8a7ef356e05eb9b1ea1ab518baee3095">String</a>()</td><td class="entry"><a class="el" href="classutil_1_1String.html">util::String</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classutil_1_1String.html#abe3ad48188e112620c1eb8414a4a071e">String</a>(String &amp;str)</td><td class="entry"><a class="el" href="classutil_1_1String.html">util::String</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutil_1_1String.html#a598e22b3794c6666951ff69d3a9c1901">String</a>(char *str)</td><td class="entry"><a class="el" href="classutil_1_1String.html">util::String</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classutil_1_1String.html#ac40b2a3fb58c2d8556f5e6ff73510036">~String</a>()</td><td class="entry"><a class="el" href="classutil_1_1String.html">util::String</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 25 2017 12:38:47 for Rhoen by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 25 2017 15:57:43 for Rhoen by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

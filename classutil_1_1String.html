@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classutil_1_1String-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">util::String Class Reference<div class="ingroups"><a class="el" href="group__util.html">Utility</a></div></div>  </div>
@@ -105,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Collaboration diagram for util::String:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classutil_1_1String__coll__graph.svg" width="94" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classutil_1_1String__coll__graph.svg" width="94" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -113,18 +114,31 @@ Collaboration diagram for util::String:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8a7ef356e05eb9b1ea1ab518baee3095"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#a8a7ef356e05eb9b1ea1ab518baee3095">String</a> ()</td></tr>
 <tr class="separator:a8a7ef356e05eb9b1ea1ab518baee3095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3ad48188e112620c1eb8414a4a071e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#abe3ad48188e112620c1eb8414a4a071e">String</a> (<a class="el" href="classutil_1_1String.html">String</a> &amp;str)</td></tr>
+<tr class="separator:abe3ad48188e112620c1eb8414a4a071e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a598e22b3794c6666951ff69d3a9c1901"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#a598e22b3794c6666951ff69d3a9c1901">String</a> (char *str)</td></tr>
+<tr class="separator:a598e22b3794c6666951ff69d3a9c1901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac40b2a3fb58c2d8556f5e6ff73510036"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#ac40b2a3fb58c2d8556f5e6ff73510036">~String</a> ()</td></tr>
 <tr class="separator:ac40b2a3fb58c2d8556f5e6ff73510036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84b25efb436ed6c47331530db7a68dad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#a84b25efb436ed6c47331530db7a68dad">Length</a> () const </td></tr>
-<tr class="memdesc:a84b25efb436ed6c47331530db7a68dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets length of string.  <a href="#a84b25efb436ed6c47331530db7a68dad">More...</a><br/></td></tr>
-<tr class="separator:a84b25efb436ed6c47331530db7a68dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a486c19d00f7285924794440419d90612"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#a486c19d00f7285924794440419d90612">Cmp</a> (const char *str) const </td></tr>
-<tr class="memdesc:a486c19d00f7285924794440419d90612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares string with char array.  <a href="#a486c19d00f7285924794440419d90612">More...</a><br/></td></tr>
-<tr class="separator:a486c19d00f7285924794440419d90612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6f7181dc0222b13adaaa2ad02d31b7ad"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#a6f7181dc0222b13adaaa2ad02d31b7ad">buffer</a> [<a class="el" href="namespaceutil.html#aa4f3dca00bb3d9edaefff15224293a03">STR_BUF_BASE</a>]</td></tr>
+<tr class="memdesc:a6f7181dc0222b13adaaa2ad02d31b7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base buffer which can grow if necessary.  <a href="#a6f7181dc0222b13adaaa2ad02d31b7ad">More...</a><br/></td></tr>
+<tr class="separator:a6f7181dc0222b13adaaa2ad02d31b7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10faec1cc97d8f5f411dc3ad992af611"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#a10faec1cc97d8f5f411dc3ad992af611">allocated</a></td></tr>
+<tr class="memdesc:a10faec1cc97d8f5f411dc3ad992af611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bytes currently allocated for buffer.  <a href="#a10faec1cc97d8f5f411dc3ad992af611">More...</a><br/></td></tr>
+<tr class="separator:a10faec1cc97d8f5f411dc3ad992af611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4bdb326b1b0a9eaa0c030ea391599f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#afa4bdb326b1b0a9eaa0c030ea391599f">head</a></td></tr>
+<tr class="memdesc:afa4bdb326b1b0a9eaa0c030ea391599f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to first character in the buffer.  <a href="#afa4bdb326b1b0a9eaa0c030ea391599f">More...</a><br/></td></tr>
+<tr class="separator:afa4bdb326b1b0a9eaa0c030ea391599f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b6cbbd3cac24557b15a054693e286c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#ac1b6cbbd3cac24557b15a054693e286c">length</a></td></tr>
+<tr class="memdesc:ac1b6cbbd3cac24557b15a054693e286c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of characters that are stored.  <a href="#ac1b6cbbd3cac24557b15a054693e286c">More...</a><br/></td></tr>
+<tr class="separator:ac1b6cbbd3cac24557b15a054693e286c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Container for storing characters sequences. </p>
-<p>Keeps an internal buffer to hold any sequence of characters. Will also allocate more memory if the string length exceeds its buffer size. This implementation should be pretty standard for a C++ string. New features will be added when they are needed by other parts of the project. </p>
+<p>Keeps an internal buffer to hold any sequence of characters. Will reallocate more memory if the data length exceeds its buffer size, keeping the memory size a multiple of STR_BUF_GRAN. This should be a pretty basic implementation of a C++ string. New features will be added as needed by other submodules. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8a7ef356e05eb9b1ea1ab518baee3095"></a>
 <div class="memitem">
@@ -134,6 +148,38 @@ Public Member Functions</h2></td></tr>
           <td class="memname">String::String </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe3ad48188e112620c1eb8414a4a071e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">util::String::String </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classutil_1_1String.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a598e22b3794c6666951ff69d3a9c1901"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">util::String::String </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -156,39 +202,92 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a486c19d00f7285924794440419d90612"></a>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a10faec1cc97d8f5f411dc3ad992af611"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int util::String::Cmp </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td> const</td>
+          <td class="memname">int util::String::allocated</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Compares string with char array. </p>
+<p>Number of bytes currently allocated for buffer. </p>
 
 </div>
 </div>
-<a class="anchor" id="a84b25efb436ed6c47331530db7a68dad"></a>
+<a class="anchor" id="a6f7181dc0222b13adaaa2ad02d31b7ad"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int util::String::Length </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="memname">char util::String::buffer[<a class="el" href="namespaceutil.html#aa4f3dca00bb3d9edaefff15224293a03">STR_BUF_BASE</a>]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Gets length of string. </p>
+<p>Base buffer which can grow if necessary. </p>
+
+</div>
+</div>
+<a class="anchor" id="afa4bdb326b1b0a9eaa0c030ea391599f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* util::String::head</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pointer to first character in the buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac1b6cbbd3cac24557b15a054693e286c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int util::String::length</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of characters that are stored. </p>
 
 </div>
 </div>
@@ -199,7 +298,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 25 2017 12:38:47 for Rhoen by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 25 2017 15:57:43 for Rhoen by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

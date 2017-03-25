@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['game',['Game',['../group__game.html',1,'']]]
+  ['core',['core',['../namespacecore.html',1,'core'],['../group__core.html',1,'(Global Namespace)']]]
 ];

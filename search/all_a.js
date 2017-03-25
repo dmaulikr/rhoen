@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['_7eengine',['~Engine',['../classcore_1_1Engine.html#a8ef7030a089ecb30bbfcb9e43094717a',1,'core::Engine']]],
-  ['_7estring',['~String',['../classutil_1_1String.html#ac40b2a3fb58c2d8556f5e6ff73510036',1,'util::String']]],
-  ['_7evector',['~Vector',['../classutil_1_1Vector.html#a2eb3c49587a4f12cade7895ccb73f6a0',1,'util::Vector']]]
+  ['str_5fbuf_5fbase',['STR_BUF_BASE',['../namespaceutil.html#aa4f3dca00bb3d9edaefff15224293a03',1,'util']]],
+  ['str_5fbuf_5fgran',['STR_BUF_GRAN',['../namespaceutil.html#a3897957778554dbc3f456d83f04eedcf',1,'util']]],
+  ['string',['String',['../classutil_1_1String.html#a8a7ef356e05eb9b1ea1ab518baee3095',1,'util::String::String()'],['../classutil_1_1String.html#abe3ad48188e112620c1eb8414a4a071e',1,'util::String::String(String &amp;str)'],['../classutil_1_1String.html#a598e22b3794c6666951ff69d3a9c1901',1,'util::String::String(char *str)']]],
+  ['string',['String',['../classutil_1_1String.html',1,'util']]],
+  ['string_2ecpp',['String.cpp',['../String_8cpp.html',1,'']]],
+  ['string_2eh',['String.h',['../String_8h.html',1,'']]]
 ];

@@ -64,12 +64,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +86,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">util Namespace Reference<div class="ingroups"><a class="el" href="group__util.html">Utility</a></div></div>  </div>
 </div><!--header-->
@@ -95,11 +101,49 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html">String</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for storing characters sequences.  <a href="classutil_1_1String.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa4f3dca00bb3d9edaefff15224293a03"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#aa4f3dca00bb3d9edaefff15224293a03">STR_BUF_BASE</a> = 16</td></tr>
+<tr class="memdesc:aa4f3dca00bb3d9edaefff15224293a03"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classutil_1_1String.html" title="Container for storing characters sequences. ">String</a> buffer base size.  <a href="#aa4f3dca00bb3d9edaefff15224293a03">More...</a><br/></td></tr>
+<tr class="separator:aa4f3dca00bb3d9edaefff15224293a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3897957778554dbc3f456d83f04eedcf"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil.html#a3897957778554dbc3f456d83f04eedcf">STR_BUF_GRAN</a> = 32</td></tr>
+<tr class="memdesc:a3897957778554dbc3f456d83f04eedcf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classutil_1_1String.html" title="Container for storing characters sequences. ">String</a> allocation granularity.  <a href="#a3897957778554dbc3f456d83f04eedcf">More...</a><br/></td></tr>
+<tr class="separator:a3897957778554dbc3f456d83f04eedcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="aa4f3dca00bb3d9edaefff15224293a03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int util::STR_BUF_BASE = 16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classutil_1_1String.html" title="Container for storing characters sequences. ">String</a> buffer base size. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3897957778554dbc3f456d83f04eedcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int util::STR_BUF_GRAN = 32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classutil_1_1String.html" title="Container for storing characters sequences. ">String</a> allocation granularity. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 25 2017 12:38:47 for Rhoen by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 25 2017 15:57:43 for Rhoen by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
