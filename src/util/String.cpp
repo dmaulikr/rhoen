@@ -10,7 +10,7 @@ char *util::strcpy(char *dst, const char *src)
 }
 
 // Replaces strcmp from standard library
-bool util::strcmp(const char *a, const char *b)
+int util::strcmp(const char *a, const char *b)
 {
 	while((*a && *b) && (*a == *b)) {
 		a++; b++;

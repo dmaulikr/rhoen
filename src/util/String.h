@@ -6,7 +6,7 @@ namespace util
 	const int STR_BUF_GRAN = 32; ///< String allocation granularity
 
 	char *strcpy(char *dst, const char *src); ///< Replacement for strcpy
-	bool strcmp(const char *a, const char *b); ///< Replacement for strcmp
+	int strcmp(const char *a, const char *b); ///< Replacement for strcmp
 	int strlen(const char *str); ///< Replacement for strlen
 }
 
