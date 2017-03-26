@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="classutil_1_1String.html#a7c7fc66225ecb5baf5960eecfbe6d168" target="_top" xlink:title="Initializes private member variables. ">
+<g id="a_node2"><a xlink:href="classutil_1_1String.html#abe05cfbfb31ab7703efe73e8c59d3113" target="_top" xlink:title="Initializes private member variables. ">
 <polygon fill="white" stroke="black" points="138,-98.6233 138,-117.623 218,-117.623 218,-98.6233 138,-98.6233"/>
 <text text-anchor="middle" x="178" y="-105.623" font-family="Helvetica,sans-Serif" font-size="10.00">util::String::Init</text>
 </a>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="classutil_1_1String.html#add6e410c0a63a07037fda94014b99cad" target="_top" xlink:title="Returns length of String. ">
+<g id="a_node3"><a xlink:href="classutil_1_1String.html#a84b25efb436ed6c47331530db7a68dad" target="_top" xlink:title="Returns length of String. ">
 <polygon fill="white" stroke="black" points="130,-60.6233 130,-79.6233 226,-79.6233 226,-60.6233 130,-60.6233"/>
 <text text-anchor="middle" x="178" y="-67.6233" font-family="Helvetica,sans-Serif" font-size="10.00">util::String::Length</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="classutil_1_1String.html#a41dbcd32aba6022654420f1ca8634e52" target="_top" xlink:title="Ensures there is enough memory. ">
+<g id="a_node4"><a xlink:href="classutil_1_1String.html#ad55e73410afb6a799ec70ab60a309a2b" target="_top" xlink:title="Ensures there is enough memory. ">
 <polygon fill="white" stroke="black" points="128.5,-22.6233 128.5,-41.6233 227.5,-41.6233 227.5,-22.6233 128.5,-22.6233"/>
 <text text-anchor="middle" x="178" y="-29.6233" font-family="Helvetica,sans-Serif" font-size="10.00">util::String::Enalloc</text>
 </a>
@@ -68,7 +68,7 @@
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="classutil_1_1String.html#ae1530f1c2413c3fca5a293d7d739d27e" target="_top" xlink:title="Reallocates buffer memory. ">
+<g id="a_node5"><a xlink:href="classutil_1_1String.html#a5208e787bb3b5608eebf0cb2eb94a29a" target="_top" xlink:title="Reallocates buffer memory. ">
 <polygon fill="white" stroke="black" points="264,-22.6233 264,-41.6233 364,-41.6233 364,-22.6233 264,-22.6233"/>
 <text text-anchor="middle" x="314" y="-29.6233" font-family="Helvetica,sans-Serif" font-size="10.00">util::String::Realloc</text>
 </a>

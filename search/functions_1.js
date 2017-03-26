@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['init',['Init',['../classutil_1_1String.html#a7c7fc66225ecb5baf5960eecfbe6d168',1,'util::String']]]
+  ['init',['Init',['../classutil_1_1String.html#abe05cfbfb31ab7703efe73e8c59d3113',1,'util::String']]]
 ];

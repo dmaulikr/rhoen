@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="classutil_1_1String.html#a41dbcd32aba6022654420f1ca8634e52" target="_top" xlink:title="Ensures there is enough memory. ">
+<g id="a_node2"><a xlink:href="classutil_1_1String.html#ad55e73410afb6a799ec70ab60a309a2b" target="_top" xlink:title="Ensures there is enough memory. ">
 <polygon fill="white" stroke="black" points="144.5,-76.5 144.5,-95.5 243.5,-95.5 243.5,-76.5 144.5,-76.5"/>
 <text text-anchor="middle" x="194" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">util::String::Enalloc</text>
 </a>
@@ -55,7 +55,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="classutil_1_1String.html#ae1530f1c2413c3fca5a293d7d739d27e" target="_top" xlink:title="Reallocates buffer memory. ">
+<g id="a_node3"><a xlink:href="classutil_1_1String.html#a5208e787bb3b5608eebf0cb2eb94a29a" target="_top" xlink:title="Reallocates buffer memory. ">
 <polygon fill="white" stroke="black" points="280,-76.5 280,-95.5 380,-95.5 380,-76.5 280,-76.5"/>
 <text text-anchor="middle" x="330" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">util::String::Realloc</text>
 </a>
