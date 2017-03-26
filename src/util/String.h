@@ -19,9 +19,9 @@ class String
 {
 public:
 	String(); ///< Default constructor
-	String(const String &str); ///< Copy constructor from String
-	String(const char *str); ///< Copy constructor from char array
-	String(const char ch); ///< Copy constructor from char
+	String(const String &str); ///< Copy constructor
+	String(const char *str); ///< Copy constructor
+	String(const char ch); ///< Copy constructor
 	~String(); ///< Destructor
 
 	int Length() const; ///< Returns length of String
@@ -29,10 +29,13 @@ public:
 	void Append(const char *str); ///< Appends array of chars
 	void Append(const char ch); ///< Appends single char
 
-	char operator[](int index) const; ///< Subscript operator for constant String
-	char &operator[](int index); ///< Subscript operator for variable String
-	void operator=(const String &str); ///< Assignment operator from String
-	void operator=(const char *str); ///< Assignment operator from char array
+	char operator[](int index) const; ///< Subscript operator for constant
+	char &operator[](int index); ///< Subscript operator for variable
+	void operator=(const String &str); ///< Assignment operator
+	void operator=(const char *str); ///< Assignment operator
+	String &operator+=(const String &str); ///< Concatenation operator
+	String &operator+=(const char *str); ///< Concatenation operator
+	String &operator+=(const char ch); ///< Concatenation operator
 
 	/// @{ Case sensitive comparison operator
 	friend bool operator==(const String &a, const String &b);

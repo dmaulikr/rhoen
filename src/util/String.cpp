@@ -164,6 +164,24 @@ void String::operator=(const char *str)
 	length = len;
 }
 
+String &String::operator+=(const String &str)
+{
+	Append(str);
+	return *this;
+}
+
+String &String::operator+=(const char *str)
+{
+	Append(str);
+	return *this;
+}
+
+String &String::operator+=(const char ch)
+{
+	Append(ch);
+	return *this;
+}
+
 char String::operator[](int index) const
 {
 	return data[index];
