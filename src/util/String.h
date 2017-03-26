@@ -35,7 +35,7 @@ public:
 	void operator=(const char *str); ///< Assignment operator from char array
 
 	/// @{ Case sensitive comparison operator, left hand
-	bool operator==(const String &b) const; 
+	bool operator==(const String &b) const;
 	bool operator==(const char *b) const;
 	bool operator!=(const String &b) const;
 	bool operator!=(const char *b) const;
