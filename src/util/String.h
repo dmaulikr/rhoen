@@ -28,14 +28,14 @@ public:
 	void operator=(const String &str); ///< Assigns value from String
 	void operator=(const char *str); ///< Assigns value from char array
 
-	/// @{ Case sensitive comparison operator, left side
+	/// @{ Case sensitive comparison, left side
 	bool operator==(const String &b) const;
 	bool operator==(const char *b) const;
 	bool operator!=(const String &b) const;
 	bool operator!=(const char *b) const;
 	/// @}
 
-	/// @{ Case sensitive comparison operator, right side
+	/// @{ Case sensitive comparison, right side
 	friend bool operator==(const char *a, const String &b);
 	friend bool operator!=(const char *a, const String &b);
 	/// @}
