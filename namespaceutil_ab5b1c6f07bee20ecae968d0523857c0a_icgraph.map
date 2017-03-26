@@ -1,7 +1,9 @@
 <map id="util::strcpy" name="util::strcpy">
-<area shape="rect" id="node2" href="$classutil_1_1String.html#abe3ad48188e112620c1eb8414a4a071e" title="Copy constructor from String. " alt="" coords="520,5,643,32"/>
-<area shape="rect" id="node3" href="$classutil_1_1String.html#aae8403dd8d1c60806d5d0696b1dfa0c1" title="Assignment operator from char array. " alt="" coords="136,31,280,57"/>
-<area shape="rect" id="node4" href="$classutil_1_1String.html#a5208e787bb3b5608eebf0cb2eb94a29a" title="Reallocates buffer memory. " alt="" coords="141,81,275,108"/>
-<area shape="rect" id="node5" href="$classutil_1_1String.html#ad55e73410afb6a799ec70ab60a309a2b" title="Ensures there is enough memory. " alt="" coords="329,68,461,95"/>
-<area shape="rect" id="node6" href="$classutil_1_1String.html#adad563cff8a9d78b8a2854c644900e44" title="Assignment operator from String. " alt="" coords="509,68,653,95"/>
+<area shape="rect" id="node2" href="$classutil_1_1String.html#aa1088c473f0e2a7f3811199339e9aaf9" title="Copy constructor from String. " alt="" coords="520,5,643,32"/>
+<area shape="rect" id="node3" href="$classutil_1_1String.html#aae8403dd8d1c60806d5d0696b1dfa0c1" title="Assignment operator from char array. " alt="" coords="136,44,280,71"/>
+<area shape="rect" id="node4" href="$classutil_1_1String.html#a5208e787bb3b5608eebf0cb2eb94a29a" title="Reallocates buffer memory. " alt="" coords="141,95,275,121"/>
+<area shape="rect" id="node5" href="$classutil_1_1String.html#ad55e73410afb6a799ec70ab60a309a2b" title="Ensures there is enough memory. " alt="" coords="329,69,461,96"/>
+<area shape="rect" id="node6" href="$classutil_1_1String.html#af6e4eac45ea96302e576fe299bc44167" title="Appends String. " alt="" coords="515,63,648,89"/>
+<area shape="rect" id="node8" href="$classutil_1_1String.html#adad563cff8a9d78b8a2854c644900e44" title="Assignment operator from String. " alt="" coords="509,113,653,140"/>
+<area shape="rect" id="node7" href="$namespaceutil.html#ac5344b02cd5f4e956a3a8a67e02dc5b8" title="util::operator+" alt="" coords="702,63,805,89"/>
 </map>

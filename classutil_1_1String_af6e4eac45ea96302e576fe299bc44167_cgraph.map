@@ -1,0 +1,6 @@
+<map id="util::String::Append" name="util::String::Append">
+<area shape="rect" id="node2" href="$classutil_1_1String.html#a84b25efb436ed6c47331530db7a68dad" title="Returns length of String. " alt="" coords="189,5,317,32"/>
+<area shape="rect" id="node3" href="$classutil_1_1String.html#ad55e73410afb6a799ec70ab60a309a2b" title="Ensures there is enough memory. " alt="" coords="187,56,319,83"/>
+<area shape="rect" id="node4" href="$classutil_1_1String.html#a5208e787bb3b5608eebf0cb2eb94a29a" title="Reallocates buffer memory. " alt="" coords="368,56,501,83"/>
+<area shape="rect" id="node5" href="$namespaceutil.html#ab5b1c6f07bee20ecae968d0523857c0a" title="Replacement for strcpy. " alt="" coords="549,56,632,83"/>
+</map>

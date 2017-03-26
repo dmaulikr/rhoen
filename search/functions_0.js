@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['enalloc',['Enalloc',['../classutil_1_1String.html#ad55e73410afb6a799ec70ab60a309a2b',1,'util::String']]],
-  ['engine',['Engine',['../classcore_1_1Engine.html#a8c98683b0a3aa28d8ab72a8bcd0d52f2',1,'core::Engine']]]
+  ['append',['Append',['../classutil_1_1String.html#af6e4eac45ea96302e576fe299bc44167',1,'util::String::Append(const String &amp;str)'],['../classutil_1_1String.html#a6ced3495a9a2138a0083ffcd96be6157',1,'util::String::Append(const char *str)'],['../classutil_1_1String.html#a89e304b5354309c8b93eaff687e172c0',1,'util::String::Append(const char ch)']]]
 ];
