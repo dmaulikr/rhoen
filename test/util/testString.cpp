@@ -68,3 +68,27 @@ TEST_CASE("Single Chars can be accessed", "[util::String]")
 	REQUIRE(str_b[0] == 'g');
 	REQUIRE(str_b[6] == 'a');
 }
+
+TEST_CASE("Strings can be concatenated", "[util::String]")
+{
+	util::String str_a("abc");
+	util::String str_b("def");
+	util::String str_c, str_d;
+	util::String str_e, str_f;
+	util::String str_g;
+
+	str_c = str_a + str_b;
+	REQUIRE(str_c == "abcdef");
+
+	str_d = str_a + "def";
+	REQUIRE(str_d == "abcdef");
+
+	str_e = "abc" + str_b;
+	REQUIRE(str_e == "abcdef");
+
+	str_f = str_a + 'd';
+	REQUIRE(str_f == "abcd");
+
+	str_g = 'c' + str_b;
+	REQUIRE(str_g == "cdef");
+}
