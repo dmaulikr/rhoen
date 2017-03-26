@@ -3,7 +3,7 @@ AR = ar
 ARFLAGS = rcs
 CPPFLAGS = -Iinc -MMD -MP
 CFLAGS = -ansi -pedantic -Wall -Wextra
-LDFLAGS = -Llib -lUtil -lEngine -lGLEW -lGL
+LDFLAGS = -Llib -lUtil -lEngine
 TARGET = bin/rhoen
 TEST = bin/test
 # directories

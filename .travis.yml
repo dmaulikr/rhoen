@@ -9,7 +9,6 @@ branches:
 addons:
   apt:
     packages:
-    - libglew-dev
     - graphviz
     - doxygen
 
