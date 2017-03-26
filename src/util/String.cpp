@@ -1,8 +1,8 @@
 #include <util.h>
-using namespace util;
+namespace util {
 
 // Replaces strcmp from standard library
-int util::strcmp(const char *a, const char *b)
+int strcmp(const char *a, const char *b)
 {
 	while((*a && *b) && (*a == *b)) {
 		a++; b++;
@@ -11,7 +11,7 @@ int util::strcmp(const char *a, const char *b)
 }
 
 // Replaces strlen from standard library
-int util::strlen(const char *str)
+int strlen(const char *str)
 {
 	int len;
 
@@ -23,7 +23,7 @@ int util::strlen(const char *str)
 }
 
 // Replaces strcpy from standard library
-char *util::strcpy(char *dst, const char *src)
+char *strcpy(char *dst, const char *src)
 {
 	char *ret;
 
@@ -33,7 +33,7 @@ char *util::strcpy(char *dst, const char *src)
 }
 
 // Replaces memcpy from standard library
-void *util::memcpy(void* dst, const void* src, int size)
+void *memcpy(void* dst, const void* src, int size)
 {
 	char *dst_b, *src_b;
 
@@ -156,3 +156,5 @@ void String::Realloc(int size, bool copy)
 	}
 	data = newbuffer;
 }
+
+} // namespace util
