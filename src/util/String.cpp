@@ -50,12 +50,12 @@ String::String()
 	Init();
 }
 
-String::String(String &str)
+String::String(const String &str)
 {
 	Init();
 	length = str.Length();
 	Enalloc(length+1);
-	strcpy(str.data, data);
+	strcpy(data, str.data);
 }
 
 String::String(const char *str)
@@ -69,6 +69,14 @@ String::String(const char *str)
 	strcpy(data, str);
 }
 
+String::String(const char ch)
+{
+	Init();
+	Enalloc(2);
+	data[length++] = ch;
+	data[length] = '\0';
+}
+
 String::~String()
 {
 }
@@ -76,6 +84,47 @@ String::~String()
 int String::Length() const
 {
 	return length;
+}
+
+// FIXME: reuse function below
+void String::Append(const String &str)
+{
+	int i, len;
+	int newlen;
+
+	len = str.Length();
+	newlen = length + len;
+	Enalloc(newlen+1);
+	for (i = 0; i < len; i++) {
+		data[length+i] = str[i];
+	}
+	length = newlen;
+	data[length] = '\0';
+}
+
+void String::Append(const char *str)
+{
+	int i, len;
+	int newlen;
+
+	if (!str) {
+		return;
+	}
+	len = strlen(str);
+	newlen = length + len;
+	Enalloc(newlen+1);
+	for (i = 0; i < len; i++) {
+		data[length+i] = str[i];
+	}
+	length = newlen;
+	data[length] = '\0' ;
+}
+
+void String::Append(const char ch)
+{
+	Enalloc(length+2);
+	data[length++] = ch;
+	data[length] = '\0';
 }
 
 void String::operator=(const String &str)
@@ -195,6 +244,42 @@ bool operator==(const char *a, const String &b)
 bool operator!=(const char *a, const String &b)
 {
 	return !(a == b);
+}
+
+String operator+(const String &a, const String &b)
+{
+	String newstr(a);
+	newstr.Append(b);
+	return newstr;
+	
+}
+
+String operator+(const String &a, const char *b)
+{
+	String newstr(a);
+	newstr.Append(b);
+	return newstr;
+}
+
+String operator+(const String &a, const char b)
+{
+	String newstr(a);
+	newstr.Append(b);
+	return newstr;
+}
+
+String operator+(const char *a, const String &b)
+{
+	String newstr(a);
+	newstr.Append(b);
+	return newstr;
+}
+
+String operator+(const char a, const String &b)
+{
+	String newstr(a);
+	newstr.Append(b);
+	return newstr;
 }
 
 } // namespace util
