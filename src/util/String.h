@@ -34,7 +34,7 @@ public:
 	void operator=(const String &str); ///< Assignment operator from String
 	void operator=(const char *str); ///< Assignment operator from char array
 
-	/// @{ Case sensitive String comparison operator
+	/// @{ Case sensitive comparison operator
 	friend bool operator==(const String &a, const String &b);
 	friend bool operator==(const String &a, const char *b);
 	friend bool operator==(const char *a, const String &b);
@@ -43,7 +43,7 @@ public:
 	friend bool operator!=(const char *a, const String &b);
 	/// @}
 
-	/// @{ String concatenation operator
+	/// @{ Concatenation operator
 	friend String operator+(const String &a, const String &b);
 	friend String operator+(const String &a, const char *b);
 	friend String operator+(const String &a, const char b);
