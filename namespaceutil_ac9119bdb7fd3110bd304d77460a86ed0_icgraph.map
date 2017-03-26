@@ -1,4 +1,4 @@
 <map id="util::strlen" name="util::strlen">
-<area shape="rect" id="node2" href="$classutil_1_1String.html#a44470629fa7114e8abacec2852116306" title="Copy constructor. " alt="" coords="144,5,267,32"/>
-<area shape="rect" id="node3" href="$classutil_1_1String.html#aae8403dd8d1c60806d5d0696b1dfa0c1" title="Assigns value from char array. " alt="" coords="133,56,277,83"/>
+<area shape="rect" id="node2" href="$classutil_1_1String.html#a44470629fa7114e8abacec2852116306" title="Copy constructor from char array. " alt="" coords="144,5,267,32"/>
+<area shape="rect" id="node3" href="$classutil_1_1String.html#aae8403dd8d1c60806d5d0696b1dfa0c1" title="Assignment operator from char array. " alt="" coords="133,56,277,83"/>
 </map>
