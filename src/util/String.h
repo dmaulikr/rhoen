@@ -34,19 +34,16 @@ public:
 	void operator=(const String &str); ///< Assignment operator from String
 	void operator=(const char *str); ///< Assignment operator from char array
 
-	/// @{ Case sensitive comparison operator, left hand
-	bool operator==(const String &b) const;
-	bool operator==(const char *b) const;
-	bool operator!=(const String &b) const;
-	bool operator!=(const char *b) const;
-	/// @}
-
-	/// @{ Case sensitive comparison operator, right hand
+	/// @{ Case sensitive String comparison operator
+	friend bool operator==(const String &a, const String &b);
+	friend bool operator==(const String &a, const char *b);
 	friend bool operator==(const char *a, const String &b);
+	friend bool operator!=(const String &a, const String &b);
+	friend bool operator!=(const String &a, const char *b);
 	friend bool operator!=(const char *a, const String &b);
 	/// @}
 
-	/// @{ Concatenation operator
+	/// @{ String concatenation operator
 	friend String operator+(const String &a, const String &b);
 	friend String operator+(const String &a, const char *b);
 	friend String operator+(const String &a, const char b);
