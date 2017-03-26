@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="classutil_1_1String.html#a6ced3495a9a2138a0083ffcd96be6157" target="_top" xlink:title="Appends array of chars. ">
+<g id="a_node3"><a xlink:href="classutil_1_1String.html#a6ced3495a9a2138a0083ffcd96be6157" target="_top" xlink:title="Appends char array. ">
 <polygon fill="white" stroke="black" points="100,-38.5 100,-57.5 200,-57.5 200,-38.5 100,-38.5"/>
 <text text-anchor="middle" x="150" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">util::String::Append</text>
 </a>

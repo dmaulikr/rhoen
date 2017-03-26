@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['realloc',['Realloc',['../classutil_1_1String.html#a5208e787bb3b5608eebf0cb2eb94a29a',1,'util::String']]]
+  ['main',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['memcpy',['memcpy',['../namespaceutil.html#add6638fa708a7a25fd0a3ff21b33e327',1,'util']]],
+  ['message',['Message',['../classutil_1_1Log.html#a0c22132b5f1a47b832799c273490420d',1,'util::Log']]]
 ];

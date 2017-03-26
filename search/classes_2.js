@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vector',['Vector',['../classutil_1_1Vector.html',1,'util']]]
+  ['string',['String',['../classutil_1_1String.html',1,'util']]]
 ];

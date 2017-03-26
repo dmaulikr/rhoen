@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vector',['Vector',['../classutil_1_1Vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5',1,'util::Vector']]]
+  ['realloc',['Realloc',['../classutil_1_1String.html#a5208e787bb3b5608eebf0cb2eb94a29a',1,'util::String']]]
 ];
