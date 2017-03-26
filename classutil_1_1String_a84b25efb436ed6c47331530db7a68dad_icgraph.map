@@ -1,6 +1,7 @@
 <map id="util::String::Length" name="util::String::Length">
-<area shape="rect" id="node2" href="$classutil_1_1String.html#aa1088c473f0e2a7f3811199339e9aaf9" title="Copy constructor from String. " alt="" coords="192,5,315,32"/>
+<area shape="rect" id="node2" href="$classutil_1_1String.html#aa1088c473f0e2a7f3811199339e9aaf9" title="Copy constructor. " alt="" coords="192,5,315,32"/>
 <area shape="rect" id="node3" href="$classutil_1_1String.html#af6e4eac45ea96302e576fe299bc44167" title="Appends String. " alt="" coords="187,56,320,83"/>
-<area shape="rect" id="node5" href="$classutil_1_1String.html#adad563cff8a9d78b8a2854c644900e44" title="Assignment operator from String. " alt="" coords="181,107,325,133"/>
-<area shape="rect" id="node4" href="$namespaceutil.html#ac5344b02cd5f4e956a3a8a67e02dc5b8" title="util::operator+" alt="" coords="374,56,477,83"/>
+<area shape="rect" id="node6" href="$classutil_1_1String.html#adad563cff8a9d78b8a2854c644900e44" title="Assignment operator. " alt="" coords="181,107,325,133"/>
+<area shape="rect" id="node4" href="$classutil_1_1String.html#ae994dd6990d30ab95e288cb9664385c2" title="Concatenation operator. " alt="" coords="373,31,525,57"/>
+<area shape="rect" id="node5" href="$namespaceutil.html#ac5344b02cd5f4e956a3a8a67e02dc5b8" title="util::operator+" alt="" coords="398,81,501,108"/>
 </map>

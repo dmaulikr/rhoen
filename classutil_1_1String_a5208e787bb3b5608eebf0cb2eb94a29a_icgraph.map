@@ -1,7 +1,8 @@
 <map id="util::String::Realloc" name="util::String::Realloc">
 <area shape="rect" id="node2" href="$classutil_1_1String.html#ad55e73410afb6a799ec70ab60a309a2b" title="Ensures there is enough memory. " alt="" coords="187,56,319,83"/>
-<area shape="rect" id="node3" href="$classutil_1_1String.html#aa1088c473f0e2a7f3811199339e9aaf9" title="Copy constructor from String. " alt="" coords="379,5,501,32"/>
+<area shape="rect" id="node3" href="$classutil_1_1String.html#aa1088c473f0e2a7f3811199339e9aaf9" title="Copy constructor. " alt="" coords="379,5,501,32"/>
 <area shape="rect" id="node4" href="$classutil_1_1String.html#af6e4eac45ea96302e576fe299bc44167" title="Appends String. " alt="" coords="373,56,507,83"/>
-<area shape="rect" id="node6" href="$classutil_1_1String.html#adad563cff8a9d78b8a2854c644900e44" title="Assignment operator from String. " alt="" coords="368,107,512,133"/>
-<area shape="rect" id="node5" href="$namespaceutil.html#ac5344b02cd5f4e956a3a8a67e02dc5b8" title="util::operator+" alt="" coords="561,56,663,83"/>
+<area shape="rect" id="node7" href="$classutil_1_1String.html#adad563cff8a9d78b8a2854c644900e44" title="Assignment operator. " alt="" coords="368,107,512,133"/>
+<area shape="rect" id="node5" href="$classutil_1_1String.html#ae994dd6990d30ab95e288cb9664385c2" title="Concatenation operator. " alt="" coords="560,31,712,57"/>
+<area shape="rect" id="node6" href="$namespaceutil.html#ac5344b02cd5f4e956a3a8a67e02dc5b8" title="util::operator+" alt="" coords="585,81,687,108"/>
 </map>

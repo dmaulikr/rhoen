@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="classutil_1_1String.html#a44470629fa7114e8abacec2852116306" target="_top" xlink:title="Copy constructor from char array. ">
+<g id="a_node2"><a xlink:href="classutil_1_1String.html#a44470629fa7114e8abacec2852116306" target="_top" xlink:title="Copy constructor. ">
 <polygon fill="white" stroke="black" points="104,-76.5 104,-95.5 196,-95.5 196,-76.5 104,-76.5"/>
 <text text-anchor="middle" x="150" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">util::String::String</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="classutil_1_1String.html#aae8403dd8d1c60806d5d0696b1dfa0c1" target="_top" xlink:title="Assignment operator from char array. ">
+<g id="a_node4"><a xlink:href="classutil_1_1String.html#aae8403dd8d1c60806d5d0696b1dfa0c1" target="_top" xlink:title="Assignment operator. ">
 <polygon fill="white" stroke="black" points="96,-0.5 96,-19.5 204,-19.5 204,-0.5 96,-0.5"/>
 <text text-anchor="middle" x="150" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">util::String::operator=</text>
 </a>
