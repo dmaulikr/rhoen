@@ -1,13 +1,11 @@
-namespace util
-{
-	class String;
-	const int STR_BUF_BASE = 16; ///< String buffer base size
-	const int STR_BUF_GRAN = 32; ///< String allocation granularity
-	char *strcpy(char *dst, const char *src); ///< Replacement for strcpy
-	void *memcpy(void* dst, const void* src, int size); ///< Replacement for memcpy
-	int strcmp(const char *a, const char *b); ///< Replacement for strcmp
-	int strlen(const char *str); ///< Replacement for strlen
-}
+namespace util {
+
+const int STR_BUF_BASE = 16; ///< String buffer base size
+const int STR_BUF_GRAN = 32; ///< String allocation granularity
+char *strcpy(char *dst, const char *src); ///< Replacement for strcpy
+void *memcpy(void* dst, const void* src, int size); ///< Replacement for memcpy
+int strcmp(const char *a, const char *b); ///< Replacement for strcmp
+int strlen(const char *str); ///< Replacement for strlen
 
 /**
  * Container for storing characters sequences.
@@ -17,7 +15,7 @@ namespace util
  * C++ string. New features will be added as required by other submodules.
  */
 /// @ingroup util
-class util::String
+class String
 {
 public:
 	String(); ///< Default constructor
@@ -26,8 +24,21 @@ public:
 	~String(); ///< Destructor
 
 	int Length() const; ///< Returns length of String
+
 	void operator=(const String &str); ///< Assigns value from String
 	void operator=(const char *str); ///< Assigns value from char array
+
+	/// @{ Case sensitive comparison operator, left side
+	bool operator==(const String &b) const;
+	bool operator==(const char *b) const;
+	bool operator!=(const String &b) const;
+	bool operator!=(const char *b) const;
+	/// @}
+
+	/// @{ Case sensitive comparison operator, right side
+	friend bool operator==(const char *a, const String &b);
+	friend bool operator!=(const char *a, const String &b);
+	/// @}
 
 private:
 	char buffer[STR_BUF_BASE]; ///< Dynamically managed base buffer
@@ -40,3 +51,4 @@ private:
 	void Realloc(int size, bool copy = true); ///< Reallocates buffer memory
 };
 
+} // namespace util

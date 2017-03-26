@@ -115,6 +115,26 @@ void String::operator=(const char *str)
 	length = len;
 }
 
+bool String::operator==(const String &b) const
+{
+	return (!util::strcmp(data, b.data));
+}
+
+bool String::operator==(const char *b) const
+{
+	return (!util::strcmp(data, b));
+}
+
+bool String::operator!=(const String &b) const
+{
+	return !(*this == b);
+}
+
+bool String::operator!=(const char *b) const
+{
+	return !(*this == b);
+}
+
 void String::Init()
 {
 	length = 0;
@@ -155,6 +175,16 @@ void String::Realloc(int size, bool copy)
 		}
 	}
 	data = newbuffer;
+}
+
+bool operator==(const char *a, const String &b)
+{
+	return (!util::strcmp(a, b.data));
+}
+
+bool operator!=(const char *a, const String &b)
+{
+	return !(a == b);
 }
 
 } // namespace util
