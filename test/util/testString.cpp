@@ -41,3 +41,18 @@ TEST_CASE("Strings can be assigned", "[util::String]")
 	REQUIRE(str_d.Length() == 6);
 }
 
+TEST_CASE("Strings can be compared", "[util::String]")
+{
+	util::String str_a("Foo");
+	util::String str_b("Foo");
+	util::String str_c("foo");
+
+	REQUIRE(str_a == str_b);
+	REQUIRE(str_a != str_c);
+
+	REQUIRE("Foo" == str_a);
+	REQUIRE("foo" != str_a);
+
+	REQUIRE(str_a == "Foo");
+	REQUIRE(str_a != "foo");
+}
