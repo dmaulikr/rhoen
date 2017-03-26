@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Collaboration diagram for util::String:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classutil_1_1String__coll__graph.svg" width="107" height="264"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classutil_1_1String__coll__graph.svg" width="115" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -134,6 +134,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae8403dd8d1c60806d5d0696b1dfa0c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#aae8403dd8d1c60806d5d0696b1dfa0c1">operator=</a> (const char *str)</td></tr>
 <tr class="memdesc:aae8403dd8d1c60806d5d0696b1dfa0c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns value from char array.  <a href="#aae8403dd8d1c60806d5d0696b1dfa0c1">More...</a><br/></td></tr>
 <tr class="separator:aae8403dd8d1c60806d5d0696b1dfa0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a34dba4b7700521392046a9d60875705e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#a34dba4b7700521392046a9d60875705e">operator==</a> (const <a class="el" href="classutil_1_1String.html">String</a> &amp;b) const </td></tr>
+<tr class="memdesc:a34dba4b7700521392046a9d60875705e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case sensitive comparison operator, left side.  <a href="#a34dba4b7700521392046a9d60875705e">More...</a><br/></td></tr>
+<tr class="separator:a34dba4b7700521392046a9d60875705e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52f65b2c4bbd5276ce0c1aedae43016"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#af52f65b2c4bbd5276ce0c1aedae43016">operator==</a> (const char *b) const </td></tr>
+<tr class="memdesc:af52f65b2c4bbd5276ce0c1aedae43016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case sensitive comparison operator, left side.  <a href="#af52f65b2c4bbd5276ce0c1aedae43016">More...</a><br/></td></tr>
+<tr class="separator:af52f65b2c4bbd5276ce0c1aedae43016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0add56e9cfb53636628a4949cba068"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#a4e0add56e9cfb53636628a4949cba068">operator!=</a> (const <a class="el" href="classutil_1_1String.html">String</a> &amp;b) const </td></tr>
+<tr class="memdesc:a4e0add56e9cfb53636628a4949cba068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case sensitive comparison operator, left side.  <a href="#a4e0add56e9cfb53636628a4949cba068">More...</a><br/></td></tr>
+<tr class="separator:a4e0add56e9cfb53636628a4949cba068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1fc18564bb06bdbe82355eab9445219"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#aa1fc18564bb06bdbe82355eab9445219">operator!=</a> (const char *b) const </td></tr>
+<tr class="memdesc:aa1fc18564bb06bdbe82355eab9445219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case sensitive comparison operator, left side.  <a href="#aa1fc18564bb06bdbe82355eab9445219">More...</a><br/></td></tr>
+<tr class="separator:aa1fc18564bb06bdbe82355eab9445219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -161,6 +174,16 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ac1b6cbbd3cac24557b15a054693e286c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#ac1b6cbbd3cac24557b15a054693e286c">length</a></td></tr>
 <tr class="memdesc:ac1b6cbbd3cac24557b15a054693e286c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of characters in buffer.  <a href="#ac1b6cbbd3cac24557b15a054693e286c">More...</a><br/></td></tr>
 <tr class="separator:ac1b6cbbd3cac24557b15a054693e286c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a7bb003182a8c7d15043a2b50fbf968b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#a7bb003182a8c7d15043a2b50fbf968b4">operator==</a> (const char *a, const <a class="el" href="classutil_1_1String.html">String</a> &amp;b)</td></tr>
+<tr class="memdesc:a7bb003182a8c7d15043a2b50fbf968b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case sensitive comparison operator, right side.  <a href="#a7bb003182a8c7d15043a2b50fbf968b4">More...</a><br/></td></tr>
+<tr class="separator:a7bb003182a8c7d15043a2b50fbf968b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6d3ec51c7d8a2355143f76f3c26920"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1String.html#a5a6d3ec51c7d8a2355143f76f3c26920">operator!=</a> (const char *a, const <a class="el" href="classutil_1_1String.html">String</a> &amp;b)</td></tr>
+<tr class="memdesc:a5a6d3ec51c7d8a2355143f76f3c26920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case sensitive comparison operator, right side.  <a href="#a5a6d3ec51c7d8a2355143f76f3c26920">More...</a><br/></td></tr>
+<tr class="separator:a5a6d3ec51c7d8a2355143f76f3c26920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Container for storing characters sequences. </p>
@@ -371,6 +394,42 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a4e0add56e9cfb53636628a4949cba068"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool util::String::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classutil_1_1String.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Case sensitive comparison operator, left side. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa1fc18564bb06bdbe82355eab9445219"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool util::String::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Case sensitive comparison operator, left side. </p>
+
+</div>
+</div>
 <a class="anchor" id="adad563cff8a9d78b8a2854c644900e44"></a>
 <div class="memitem">
 <div class="memproto">
@@ -417,6 +476,58 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classutil_1_1String_aae8403dd8d1c60806d5d0696b1dfa0c1_cgraph.svg" width="648" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a34dba4b7700521392046a9d60875705e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool util::String::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classutil_1_1String.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Case sensitive comparison operator, left side. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classutil_1_1String_a34dba4b7700521392046a9d60875705e_cgraph.svg" width="299" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af52f65b2c4bbd5276ce0c1aedae43016"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool util::String::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Case sensitive comparison operator, left side. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classutil_1_1String_af52f65b2c4bbd5276ce0c1aedae43016_cgraph.svg" width="299" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -472,6 +583,79 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a5a6d3ec51c7d8a2355143f76f3c26920"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classutil_1_1String.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Case sensitive comparison operator, right side. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7bb003182a8c7d15043a2b50fbf968b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classutil_1_1String.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Case sensitive comparison operator, right side. </p>
 
 </div>
 </div>
@@ -571,7 +755,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 26 2017 10:34:37 for Rhoen by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 26 2017 11:58:18 for Rhoen by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

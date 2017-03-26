@@ -13,8 +13,9 @@ var indexSectionsWithContent =
   3: "eimsv",
   4: "eilmorsv~",
   5: "abdls",
-  6: "cgu",
-  7: "r"
+  6: "o",
+  7: "cgu",
+  8: "r"
 };
 
 var indexSectionNames =
@@ -25,8 +26,9 @@ var indexSectionNames =
   3: "files",
   4: "functions",
   5: "variables",
-  6: "groups",
-  7: "pages"
+  6: "related",
+  7: "groups",
+  8: "pages"
 };
 
 function convertToId(search)
