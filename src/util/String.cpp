@@ -115,6 +115,16 @@ void String::operator=(const char *str)
 	length = len;
 }
 
+char String::operator[](int index) const
+{
+	return data[index];
+}
+
+char &String::operator[](int index)
+{
+	return data[index];
+}
+
 bool String::operator==(const String &b) const
 {
 	return (!util::strcmp(data, b.data));

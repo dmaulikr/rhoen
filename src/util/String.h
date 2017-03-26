@@ -19,27 +19,27 @@ class String
 {
 public:
 	String(); ///< Default constructor
-	String(String &str); ///< Copy constructor
-	String(const char *str); ///< Copy constructor
+	String(String &str); ///< Copy constructor from String
+	String(const char *str); ///< Copy constructor from char array
 	~String(); ///< Destructor
 
 	int Length() const; ///< Returns length of String
 
-	void operator=(const String &str); ///< Assigns value from String
-	void operator=(const char *str); ///< Assigns value from char array
+	void operator=(const String &str); ///< Assignment operator from String
+	void operator=(const char *str); ///< Assignment operator from char array
+	char operator[](int index) const; ///< Subscript operator, constant String
+	char &operator[](int index); ///< Subscript operator, variable String
 
-	/// @{ Case sensitive comparison, left side
+	/// @{ Case sensitive comparison operator, left side
 	bool operator==(const String &b) const;
 	bool operator==(const char *b) const;
 	bool operator!=(const String &b) const;
 	bool operator!=(const char *b) const;
 	/// @}
-
-	/// @{ Case sensitive comparison, right side
+	/// @{ Case sensitive comparison operator, right side
 	friend bool operator==(const char *a, const String &b);
 	friend bool operator!=(const char *a, const String &b);
 	/// @}
-
 private:
 	char buffer[STR_BUF_BASE]; ///< Dynamically managed base buffer
 	int allocated; ///< Number of bytes currently allocated for buffer
