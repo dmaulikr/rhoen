@@ -26,8 +26,9 @@ public:
 
 	int Length() const; ///< Returns length of String
 	void Append(const String &str); ///< Appends String
-	void Append(const char *str); ///< Appends array of chars
+	void Append(const char *str); ///< Appends char array
 	void Append(const char ch); ///< Appends single char
+	char *c_str() const; ///< Returns value as char array
 
 	char operator[](int index) const; ///< Subscript operator for constant
 	char &operator[](int index); ///< Subscript operator for variable

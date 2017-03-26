@@ -127,6 +127,11 @@ void String::Append(const char ch)
 	data[length] = '\0';
 }
 
+char *String::c_str() const
+{
+	return data;
+}
+
 void String::operator=(const String &str)
 {
 	length = str.Length();
