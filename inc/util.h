@@ -1,6 +1,8 @@
 #ifndef UTIL_H
 #define UTIL_H
 
+// TODO: Precompile header
+
 #include <stdio.h>
 
 #include "../src/util/String.h"
