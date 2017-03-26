@@ -75,20 +75,41 @@ TEST_CASE("Strings can be concatenated", "[util::String]")
 	util::String str_b("def");
 	util::String str_c, str_d;
 	util::String str_e, str_f;
-	util::String str_g;
+	util::String str_g, str_h;
 
 	str_c = str_a + str_b;
 	REQUIRE(str_c == "abcdef");
+	REQUIRE(str_c.Length() == 6);
 
 	str_d = str_a + "def";
 	REQUIRE(str_d == "abcdef");
+	REQUIRE(str_d.Length() == 6);
 
 	str_e = "abc" + str_b;
 	REQUIRE(str_e == "abcdef");
+	REQUIRE(str_e.Length() == 6);
 
 	str_f = str_a + 'd';
 	REQUIRE(str_f == "abcd");
+	REQUIRE(str_f.Length() == 4);
 
 	str_g = 'c' + str_b;
 	REQUIRE(str_g == "cdef");
+	REQUIRE(str_g.Length() == 4);
+
+	str_h += str_a;
+	REQUIRE(str_h == "abc");
+	REQUIRE(str_h.Length() == 3);
+
+	str_h += str_b;
+	REQUIRE(str_h == "abcdef");
+	REQUIRE(str_h.Length() == 6);
+
+	str_h += "ghi";
+	REQUIRE(str_h == "abcdefghi");
+	REQUIRE(str_h.Length() == 9);
+
+	str_h += 'j';
+	REQUIRE(str_h == "abcdefghij");
+	REQUIRE(str_h.Length() == 10);
 }
