@@ -2,7 +2,7 @@
 #include <util.h>
 namespace util {
 
-float Sqrt(float x)
+float sqrt(float x)
 {
 	return ::sqrt(x);
 }

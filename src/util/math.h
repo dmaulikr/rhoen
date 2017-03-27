@@ -3,6 +3,6 @@ namespace util {
 /**
  * Calculate square root.
  */
-float Sqrt(float x);
+float sqrt(float x);
 
 } // namespace util
