@@ -8,7 +8,7 @@ TEST_CASE("vectors can be initalized and assigned", "[vector]")
 	util::Vector2 vector_copy(vector_with_arguments);
 	util::Vector2 vector_zero(0.0f, 0.0f);
 
-	SECTION("initialing vectors gives expected length") {
+	SECTION("initialized vectors give expected length") {
 		REQUIRE(vector_without_arguments.Length() == 0);
 		REQUIRE(vector_with_arguments.Length() == 25.0f);
 		REQUIRE(vector_copy.Length() == 25.0f);
