@@ -28,12 +28,13 @@ public:
 	void operator=(const Vector2 &vec); ///< Assignment operator
 	Vector2 &operator+=(const Vector2 &vec); ///< Addition compound operator
 	Vector2 &operator-=(const Vector2 &vec); ///< Subtraction compound operator
-
-	// NOTE: also using these non-member, non-friend functions:
-	// bool operator==(const Vector2 &a, const Vector2 &b);
-	// bool operator!=(const Vector2 &a, const Vector2 &b);
-	// Vector2 operator+(const Vector2 &a, const Vector2 &b);
-	// Vector2 operator-(const Vector2 &a, const Vector2 &b);
 };
+
+/// @{ Vector2 operators, non-member, non-friend
+bool operator==(const Vector2 &a, const Vector2 &b);
+bool operator!=(const Vector2 &a, const Vector2 &b);
+Vector2 operator+(const Vector2 &a, const Vector2 &b);
+Vector2 operator-(const Vector2 &a, const Vector2 &b);
+/// @}
 
 } // namespace util
