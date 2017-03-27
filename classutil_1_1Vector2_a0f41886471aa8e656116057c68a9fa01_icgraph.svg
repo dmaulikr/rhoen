@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="namespaceutil.html#a558a2ee5ae1e21cb31734e049e873ad8" target="_top" xlink:title="util::operator==">
+<g id="a_node2"><a xlink:href="namespaceutil.html#a558a2ee5ae1e21cb31734e049e873ad8" target="_top" xlink:title="Vector2 operators, non&#45;member, non&#45;friend. ">
 <polygon fill="white" stroke="black" points="152.5,-38.5 152.5,-57.5 235.5,-57.5 235.5,-38.5 152.5,-38.5"/>
 <text text-anchor="middle" x="194" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">util::operator==</text>
 </a>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="namespaceutil.html#ae8e2c73a73973d265599dd4f53467fcb" target="_top" xlink:title="util::operator!=">
+<g id="a_node3"><a xlink:href="namespaceutil.html#ae8e2c73a73973d265599dd4f53467fcb" target="_top" xlink:title="Vector2 operators, non&#45;member, non&#45;friend. ">
 <polygon fill="white" stroke="black" points="154,-0.5 154,-19.5 234,-19.5 234,-0.5 154,-0.5"/>
 <text text-anchor="middle" x="194" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">util::operator!=</text>
 </a>

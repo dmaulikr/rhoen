@@ -1,4 +1,4 @@
 <map id="util::Vector2::Compare" name="util::Vector2::Compare">
-<area shape="rect" id="node2" href="$namespaceutil.html#a558a2ee5ae1e21cb31734e049e873ad8" title="util::operator==" alt="" coords="209,5,319,32"/>
-<area shape="rect" id="node3" href="$namespaceutil.html#ae8e2c73a73973d265599dd4f53467fcb" title="util::operator!=" alt="" coords="211,56,317,83"/>
+<area shape="rect" id="node2" href="$namespaceutil.html#a558a2ee5ae1e21cb31734e049e873ad8" title="Vector2 operators, non&#45;member, non&#45;friend. " alt="" coords="209,5,319,32"/>
+<area shape="rect" id="node3" href="$namespaceutil.html#ae8e2c73a73973d265599dd4f53467fcb" title="Vector2 operators, non&#45;member, non&#45;friend. " alt="" coords="211,56,317,83"/>
 </map>
