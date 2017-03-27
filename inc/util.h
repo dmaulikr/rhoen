@@ -3,8 +3,9 @@
 
 // TODO: Precompile header
 
+#include "../src/util/math.h"
+
 #include "../src/util/String.h"
-#include "../src/util/math/common.h"
-#include "../src/util/math/Vector.h"
+#include "../src/util/Vector.h"
 
 #endif /* UTIL_H */
