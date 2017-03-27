@@ -30,7 +30,7 @@ public:
 	Vector2 &operator-=(const Vector2 &vec); ///< Subtraction compound operator
 };
 
-/// @{ Vector2 operators, non-member, non-friend
+/// @{ Vector2 non-member, non-friend operator
 bool operator==(const Vector2 &a, const Vector2 &b);
 bool operator!=(const Vector2 &a, const Vector2 &b);
 Vector2 operator+(const Vector2 &a, const Vector2 &b);
