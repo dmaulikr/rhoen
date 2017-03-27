@@ -1,0 +1,4 @@
+<map id="util::Vector2::Length" name="util::Vector2::Length">
+<area shape="rect" id="node2" href="$namespaceutil.html#a1ede9ced76df930760693d343041ecc6" title="Calculate square root by inverting the inverse square root. " alt="" coords="193,5,263,32"/>
+<area shape="rect" id="node3" href="$namespaceutil.html#a03949d3d2ce130c1914a83e6501d4e35" title="Fast inverse square root by Carmack/Mathisen/Tarolli. " alt="" coords="313,5,402,32"/>
+</map>
