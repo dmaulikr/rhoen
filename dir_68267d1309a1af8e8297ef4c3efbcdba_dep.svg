@@ -38,7 +38,7 @@
 <!-- dir_b7878ad5ecbf2506f4125b9d34c97e45 -->
 <g id="node4" class="node"><title>dir_b7878ad5ecbf2506f4125b9d34c97e45</title>
 <g id="a_node4"><a xlink:href="dir_b7878ad5ecbf2506f4125b9d34c97e45.html" target="_top" xlink:title="util">
-<polygon fill="white" stroke="red" points="70,-52 16,-52 16,-16 70,-16 70,-52"/>
+<polygon fill="white" stroke="black" points="70,-52 16,-52 16,-16 70,-16 70,-52"/>
 <text text-anchor="middle" x="43" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">util</text>
 </a>
 </g>
