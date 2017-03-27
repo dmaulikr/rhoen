@@ -32,7 +32,10 @@ TEST_CASE("Vector2 values can be compared", "[util::Vector2]")
 	util::Vector2 vec1(1.0f, 2.0f);
 	util::Vector2 vec2(1.0f, 2.0f);
 	util::Vector2 vec3(1.1f, 2.1f);
+	util::Vector2 vec4(1.1f, 2.1f);
 
-	//REQUIRE(vec1 == vec2);
-	//REQUIRE(vec2 != vec3);
+	REQUIRE(vec1 == vec2);
+	REQUIRE(vec2 != vec3);
+	REQUIRE(vec3 == vec4);
+	REQUIRE(vec4 != vec1);
 }
