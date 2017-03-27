@@ -34,8 +34,7 @@ bool Vector2::Compare(const Vector2 &vec) const
 
 float Vector2::Length() const
 {
-	// TODO
-	return 0;
+	return Sqrt((x * x) + (y * y));
 }
 
 float Vector2::operator[](int index) const
