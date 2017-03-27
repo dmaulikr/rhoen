@@ -1,86 +1,109 @@
 #include <util.h>
 #include <catch.h>
 
-TEST_CASE("Vector2 can be initialized", "[util::Vector2]")
+TEST_CASE("vectors can be initalized and assigned", "[vector]")
 {
-	util::Vector2 vec1(6.0f, 8.0f);
-	util::Vector2 vec2;
+	util::Vector2 vector_without_arguments;
+	util::Vector2 vector_with_arguments(15.0f, 20.0f);
+	util::Vector2 vector_copy(vector_with_arguments);
+	util::Vector2 vector_zero(0.0f, 0.0f);
 
-	REQUIRE(vec1.Length() == 10.0f);
-	REQUIRE(vec2.Length() == 0.0f);
+	SECTION("initialing vectors gives expected length") {
+		REQUIRE(vector_without_arguments.Length() == 0);
+		REQUIRE(vector_with_arguments.Length() == 25.0f);
+		REQUIRE(vector_copy.Length() == 25.0f);
+		REQUIRE(vector_zero.Length() == 0);
+	}
+
+	SECTION("assigning new values updates vector length") {
+		vector_without_arguments = vector_copy;
+		REQUIRE(vector_without_arguments.Length() == 25.0f);
+		vector_without_arguments = vector_zero;
+		REQUIRE(vector_without_arguments.Length() == 0);
+	}
 }
 
-TEST_CASE("Vector2 values can be accessed", "[util::Vector2]")
+TEST_CASE("vectors can be compared with other vectors", "[vector]")
 {
-	util::Vector2 vec1(1.0f, 2.0f);
-	const util::Vector2 vec2(3.0f, 4.0f);
+	util::Vector2 vector_without_arguments;
+	util::Vector2 vector_equal_one(15.0f, 20.0f);
+	util::Vector2 vector_equal_two(15.0f, 20.0f);
+	util::Vector2 vector_not_equal(30.0f, 40.0f);
+	util::Vector2 vector_zero(0.0f, 0.0f);
 
-	REQUIRE(vec1[0] == 1.0f);
-	REQUIRE(vec1[1] == 2.0f);
-	REQUIRE(vec2[0] == 3.0f);
-	REQUIRE(vec2[1] == 4.0f);
+  	SECTION("testing for equality gives expected results") {
+		REQUIRE(vector_without_arguments == vector_zero);
+		REQUIRE(vector_equal_one == vector_equal_two);
+		REQUIRE_FALSE(vector_not_equal == vector_equal_one);
+		REQUIRE_FALSE(vector_not_equal == vector_without_arguments);
+		REQUIRE_FALSE(vector_not_equal == vector_zero);
+	}
+
+	SECTION("testing for inequality gives expected results") {
+		REQUIRE(vector_not_equal != vector_zero);
+		REQUIRE(vector_not_equal != vector_equal_one);
+		REQUIRE(vector_not_equal != vector_without_arguments);
+		REQUIRE_FALSE(vector_without_arguments != vector_zero);
+		REQUIRE_FALSE(vector_equal_one != vector_equal_two);
+	}
 }
 
-TEST_CASE("Vector2 values can be compared", "[util::Vector2]")
+TEST_CASE("vector can be accessed like arrays", "[vector]")
 {
-	util::Vector2 vec1(1.0f, 2.0f);
-	util::Vector2 vec2(1.0f, 2.0f);
-	util::Vector2 vec3(1.1f, 2.1f);
-	util::Vector2 vec4(1.1f, 2.1f);
+	util::Vector2 vector_variable(50.0f, 100.0f);
+	const util::Vector2 vector_constant(75.0f, 150.0f);
 
-	REQUIRE(vec1 == vec2);
-	REQUIRE(vec2 != vec3);
-	REQUIRE(vec3 == vec4);
-	REQUIRE(vec4 != vec1);
+	SECTION("reading by index returns value") {
+		REQUIRE(vector_variable[0] == 50.0f);
+		REQUIRE(vector_variable[1] == 100.0f);
+	}
+
+	SECTION("reading constant returns value") {
+		REQUIRE(vector_constant[0] == 75.0f);
+		REQUIRE(vector_constant[1] == 150.0f);
+	}
+
+	SECTION("writing to index updates size") {
+		vector_variable[0] = 15.0f;
+		vector_variable[1] = 20.0f;
+		REQUIRE(vector_variable.Length() == 25);
+	}
 }
 
-TEST_CASE("Vector2 values can be assigned", "[util::Vector2]")
+TEST_CASE("vectors can be added", "[vector]")
 {
-	util::Vector2 vec1(1.0f, 2.0f);
-	util::Vector2 vec2(3.0f, 4.0f);
-	util::Vector2 vec3, vec4;
+	util::Vector2 vector_result;
+	util::Vector2 vector_one(10.0f, 5.0f);
+	util::Vector2 vector_two(5.0f, 15.0f);
 
-	vec3 = vec1;
-	REQUIRE(vec3 == vec1);
+	SECTION("adding two vectors returns new vector") {
+		vector_result = vector_one + vector_two;
+		REQUIRE(vector_result.Length() == 25);
+		REQUIRE(vector_one.Length() != 25);
+	}
 
-	vec4 = vec2;
-	REQUIRE(vec4 == vec2);
+	SECTION("compound addition modifies value") {
+		vector_result += vector_one;
+		vector_result += vector_two;
+		REQUIRE(vector_result.Length() == 25);
+	}
 }
 
-TEST_CASE("Vector2 values can be added", "[util::Vector2]")
+TEST_CASE("vectors can be subtracted", "[vector]")
 {
-	util::Vector2 vec1, vec2, vec3;
-	util::Vector2 vec4(1.0f, 2.0f);
-	util::Vector2 vec5(2.0f, 4.0f);
-	util::Vector2 vec6(3.0f, 6.0f);
+	util::Vector2 vector_result;
+	util::Vector2 vector_one(30.0f, 40.0f);
+	util::Vector2 vector_two(15.0f, 20.0f);
 
-	vec1 = vec2 + vec4;
-	REQUIRE(vec1 == vec4);
+	SECTION("subtracting two vectors returns new vector") {
+		vector_result = vector_one - vector_two;
+		REQUIRE(vector_result.Length() == 25);
+		REQUIRE(vector_one.Length() != 25);
+	}
 
-	vec2 = vec1 + vec4;
-	REQUIRE(vec2 == vec5);
-
-	vec3 += vec1;
-	vec3 += vec2;
-	REQUIRE(vec3 == vec6);
-}
-
-TEST_CASE("Vector2 values can be subtracted", "[util::Vector2]")
-{
-	util::Vector2 vec1, vec2, vec3;
-	util::Vector2 vec4(3.0f, 6.0f);
-	util::Vector2 vec5(2.0f, 4.0f);
-	util::Vector2 vec6(1.0f, 2.0f);
-	util::Vector2 vec7(0.0f, 0.0f);
-
-	vec1 = vec4 - vec5;
-	REQUIRE(vec1 == vec6);
-
-	vec2 = vec5 - vec6;
-	REQUIRE(vec2 == vec6);
-
-	vec3 = vec4;
-	vec3 -= vec5;
-	vec3 -= vec6;
-	REQUIRE(vec3 == vec7);
+	SECTION("compound subraction modifies value") {
+		vector_one -= vector_two;
+		vector_one -= vector_two;
+		REQUIRE(vector_one.Length() == 0);
+	}
 }

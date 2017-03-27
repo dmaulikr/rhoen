@@ -57,7 +57,7 @@ TEST_CASE("Strings can be compared", "[util::String]")
 	REQUIRE(str_a != "foo");
 }
 
-TEST_CASE("Single Chars can be accessed", "[util::String]")
+TEST_CASE("Single chars can be accessed", "[util::String]")
 {
 	util::String str_a("abcdefg");
 	const util::String str_b("gfedcba");
