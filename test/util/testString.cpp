@@ -2,114 +2,113 @@
 #include <util.h>
 #include <catch.h>
 
-TEST_CASE("Char arrays can be compared", "[util::strcmp]")
+TEST_CASE("strings can be initialized and assigned", "[string]")
 {
-	int val_a = util::strcmp("string", "string");
-	REQUIRE(val_a == 0);
+	util::String string_without_arguments;
+	util::String string_from_char_array("Foo");
+	util::String string_from_char('B');
+	util::String string_empty("");
 
-	int val_c = util::strcmp("abcdef", "ABCDEF");
-	REQUIRE(val_c > 0);
+	SECTION("initialized string have expected length") {
+		REQUIRE(string_without_arguments.Length() == 0);
+		REQUIRE(string_from_char_array.Length() == 3);
+		REQUIRE(string_from_char.Length() == 1);
+		REQUIRE(string_empty.Length() == 0);
+	}
 
-	int val_d = util::strcmp("ABCDEF", "abcdef");
-	REQUIRE(val_d < 0);
+	SECTION("assigning new values updates string length") {
+		string_empty = string_from_char_array;
+		REQUIRE(string_empty.Length() == 3);
+		string_empty = string_without_arguments;
+		REQUIRE(string_empty.Length() == 0);
+		string_empty = "Foobar";
+		REQUIRE(string_empty.Length() == 6);
+		string_empty = 'A';
+		REQUIRE(string_empty.Length() == 1);
+	}
 }
 
-TEST_CASE("Strings can be initialized", "[util::String]")
+TEST_CASE("strings can be compared with other strings", "[string]")
 {
-	util::String str_a;
-	REQUIRE(str_a.Length() == 0);
+	util::String string_without_arguments;
+	util::String string_equal_one("Foo");
+	util::String string_equal_two("Foo");
+	util::String string_not_equal("foo");
+	util::String string_empty("");
 
-	util::String str_b("0123456789");
-	REQUIRE(str_b.Length() == 10);
+	SECTION("testing for equality gives expected results") {
+		REQUIRE(string_without_arguments == string_empty);
+		REQUIRE(string_equal_one == string_equal_two);
+		REQUIRE(string_equal_one == "Foo");
+		REQUIRE("Foo" == string_equal_one);
+		REQUIRE_FALSE(string_not_equal == string_equal_one);
+		REQUIRE_FALSE(string_not_equal == string_without_arguments);
+		REQUIRE_FALSE(string_not_equal == string_empty);
+		REQUIRE_FALSE(string_not_equal == "Foo");
+		REQUIRE_FALSE("Foo" == string_not_equal);
+	}
 
-	util::String str_c(str_b);
-	REQUIRE(str_c.Length() == 10);
+	SECTION("testing for inequality gives expected results") {
+		REQUIRE(string_not_equal != string_empty);
+		REQUIRE(string_not_equal != string_equal_one);
+		REQUIRE(string_not_equal != string_without_arguments);
+		REQUIRE(string_not_equal != "Foo");
+		REQUIRE("Foo" != string_not_equal);
+		REQUIRE_FALSE(string_without_arguments != string_empty);
+		REQUIRE_FALSE(string_equal_one != string_equal_two);
+		REQUIRE_FALSE(string_not_equal != "foo");
+		REQUIRE_FALSE("foo" != string_not_equal);
+		
+	}
 }
 
-TEST_CASE("Strings can be assigned", "[util::String]")
+TEST_CASE("strings can be accessed like arrays", "[string]")
 {
-	util::String str_a;
-	util::String str_b;
+	util::String string_variable("Foo");
+	const util::String string_constant("Bar");
 
-	str_a = "Foo";
-	str_b = "Foobar";
+	SECTION("reading by index returns value") {
+		REQUIRE(string_variable[0] == 'F');
+		REQUIRE(string_variable[2] == 'o');
+	}
 
-	util::String str_c = str_a;
-	REQUIRE(str_c.Length() == 3);
+	SECTION("reading constant returns value") {
+		REQUIRE(string_constant[0] == 'B');
+		REQUIRE(string_constant[2] == 'r');
+	}
 
-	util::String str_d = str_b;
-	REQUIRE(str_d.Length() == 6);
+	SECTION("writing to index updates value") {
+		string_variable[0] = 'A';
+		string_variable[1] = 'B';
+		REQUIRE(string_variable[0] == 'A');
+		REQUIRE(string_variable[1] == 'B');
+	}
 }
 
-TEST_CASE("Strings can be compared", "[util::String]")
+TEST_CASE("strings can be concatenated", "string")
 {
-	util::String str_a("Foo");
-	util::String str_b("Foo");
-	util::String str_c("foo");
+	util::String string_result;
+	util::String string_one("foo");
+	util::String string_two("bar");
 
-	REQUIRE(str_a == str_b);
-	REQUIRE(str_a != str_c);
+	SECTION("adding two strings returns new value") {
+		string_result = string_one + string_two;
+		REQUIRE(string_result.Length() == 6);
+		string_result = string_one + "barbaz";
+		REQUIRE(string_result.Length() == 9);
+		string_result = "bazbarbuz" + string_one;
+		REQUIRE(string_result.Length() == 12);
+		string_result =  string_one + 'a';
+		REQUIRE(string_result.Length() == 4);
+		string_result = 'a' + string_one;
+		REQUIRE(string_result.Length() == 4);
+		REQUIRE(string_one.Length() == 3);
+		REQUIRE(string_two.Length() == 3);
+	}
 
-	REQUIRE("Foo" == str_a);
-	REQUIRE("foo" != str_a);
-
-	REQUIRE(str_a == "Foo");
-	REQUIRE(str_a != "foo");
-}
-
-TEST_CASE("Single chars can be accessed", "[util::String]")
-{
-	util::String str_a("abcdefg");
-	const util::String str_b("gfedcba");
-
-	REQUIRE(str_a[0] == 'a');
-	REQUIRE(str_a[6] == 'g');
-
-	REQUIRE(str_b[0] == 'g');
-	REQUIRE(str_b[6] == 'a');
-}
-
-TEST_CASE("Strings can be concatenated", "[util::String]")
-{
-	util::String str_a("abc");
-	util::String str_b("def");
-	util::String str_c, str_d;
-	util::String str_e, str_f;
-	util::String str_g, str_h;
-
-	str_c = str_a + str_b;
-	REQUIRE(str_c == "abcdef");
-	REQUIRE(str_c.Length() == 6);
-
-	str_d = str_a + "def";
-	REQUIRE(str_d == "abcdef");
-	REQUIRE(str_d.Length() == 6);
-
-	str_e = "abc" + str_b;
-	REQUIRE(str_e == "abcdef");
-	REQUIRE(str_e.Length() == 6);
-
-	str_f = str_a + 'd';
-	REQUIRE(str_f == "abcd");
-	REQUIRE(str_f.Length() == 4);
-
-	str_g = 'c' + str_b;
-	REQUIRE(str_g == "cdef");
-	REQUIRE(str_g.Length() == 4);
-
-	str_h += str_a;
-	REQUIRE(str_h == "abc");
-	REQUIRE(str_h.Length() == 3);
-
-	str_h += str_b;
-	REQUIRE(str_h == "abcdef");
-	REQUIRE(str_h.Length() == 6);
-
-	str_h += "ghi";
-	REQUIRE(str_h == "abcdefghi");
-	REQUIRE(str_h.Length() == 9);
-
-	str_h += 'j';
-	REQUIRE(str_h == "abcdefghij");
-	REQUIRE(str_h.Length() == 10);
+	SECTION("compound operator modifies value") {
+		string_result += string_one;
+		string_result += string_two;
+		REQUIRE(string_result.Length() == 6);
+	}
 }
