@@ -112,3 +112,22 @@ TEST_CASE("strings can be concatenated", "string")
 		REQUIRE(string_result.Length() == 6);
 	}
 }
+
+TEST_CASE("strings can be converted to different case", "[string]")
+{
+	util::String string_empty;
+	util::String string_lower("abcdef");
+	util::String string_upper("ABCDEF");
+
+	SECTION("ToLower converts to lower case") {
+		REQUIRE(string_empty.ToLower() == "");
+		REQUIRE(string_lower.ToLower() == "abcdef");
+		REQUIRE(string_upper.ToLower() == "abcdef");
+	}
+
+	SECTION("ToUpper converts to upper case") {
+		REQUIRE(string_empty.ToUpper() == "");
+		REQUIRE(string_lower.ToUpper() == "ABCDEF");
+		REQUIRE(string_upper.ToUpper() == "ABCDEF");
+	}
+}
