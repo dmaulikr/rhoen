@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vector2',['Vector2',['../classutil_1_1Vector2.html#acba1eb1466f8abcde29d039e789f7e27',1,'util::Vector2::Vector2()'],['../classutil_1_1Vector2.html#a7c892b98d8efc2a5d4d15af92fb8188e',1,'util::Vector2::Vector2(const Vector2 &amp;vec)'],['../classutil_1_1Vector2.html#af1650bfd8ebdf6e4f960b47974f8402c',1,'util::Vector2::Vector2(const float vx, const float vy)']]]
+  ['tolower',['ToLower',['../classutil_1_1String.html#a2a37c5ab1144a944e9839e9523c02fb7',1,'util::String']]],
+  ['toupper',['ToUpper',['../classutil_1_1String.html#a9c3fe10be4efb85a353e2998ab6a0029',1,'util::String']]]
 ];
