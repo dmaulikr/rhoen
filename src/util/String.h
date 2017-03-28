@@ -25,6 +25,7 @@ public:
 	~String(); ///< Destructor
 
 	int Length() const; ///< Returns length of String
+	bool IsEmpty() const; ///< Checks if String is empty
 	void Append(const String &str); ///< Appends String
 	void Append(const char *str); ///< Appends char array
 	void Append(const char ch); ///< Appends single char

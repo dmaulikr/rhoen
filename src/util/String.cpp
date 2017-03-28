@@ -86,6 +86,11 @@ int String::Length() const
 	return length;
 }
 
+bool String::IsEmpty() const
+{
+	return (length == 0);
+}
+
 // FIXME: reuse function below
 void String::Append(const String &str)
 {
@@ -134,9 +139,7 @@ char *String::c_str() const
 
 String &String::ToLower()
 {
-	int i;
-
-	for (i = 0; i < length; i++) {
+	for (int i = 0; i < length; i++) {
 		if(data[i] >= 65 && data[i] <= 90) {
 			data[i] = data[i] + 32;
 		}
@@ -146,9 +149,7 @@ String &String::ToLower()
 
 String &String::ToUpper()
 {
-	int i;
-
-	for (i = 0; i < length; i++) {
+	for (int i = 0; i < length; i++) {
 		if(data[i] >= 97 && data[i] <= 122) {
 			data[i] = data[i] - 32;
 		}
