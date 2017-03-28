@@ -26,6 +26,15 @@ TEST_CASE("strings can be initialized and assigned", "[string]")
 		string_empty = 'A';
 		REQUIRE(string_empty.Length() == 1);
 	}
+
+	SECTION("checking if empty returns expected value") {
+		REQUIRE(string_empty.IsEmpty());
+		REQUIRE(string_without_arguments.IsEmpty());
+		REQUIRE_FALSE(string_from_char_array.IsEmpty());
+		REQUIRE_FALSE(string_from_char.IsEmpty());
+		string_from_char_array = "";
+		REQUIRE(string_from_char_array.IsEmpty());
+	}
 }
 
 TEST_CASE("strings can be compared with other strings", "[string]")
