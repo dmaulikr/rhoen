@@ -29,6 +29,8 @@ public:
 	void Append(const char *str); ///< Appends char array
 	void Append(const char ch); ///< Appends single char
 	char *c_str() const; ///< Returns value as char array
+	String &ToLower(); ///< Converts to lower case
+	String &ToUpper(); ///< Converts to upper case
 
 	char operator[](int index) const; ///< Subscript operator for constant
 	char &operator[](int index); ///< Subscript operator for variable

@@ -132,6 +132,30 @@ char *String::c_str() const
 	return data;
 }
 
+String &String::ToLower()
+{
+	int i;
+
+	for (i = 0; i < length; i++) {
+		if(data[i] >= 65 && data[i] <= 90) {
+			data[i] = data[i] + 32;
+		}
+	}
+	return *this;
+}
+
+String &String::ToUpper()
+{
+	int i;
+
+	for (i = 0; i < length; i++) {
+		if(data[i] >= 97 && data[i] <= 122) {
+			data[i] = data[i] - 32;
+		}
+	}
+	return *this;
+}
+
 void String::operator=(const String &str)
 {
 	length = str.Length();
